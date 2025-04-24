@@ -1,22 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 header{
     display: flex;
-    height: 70px;
-    background-color: rgb(232, 200, 154);
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    height: 70px;
+    background-color: rgb(232, 200, 154);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
 }
 
-p{
+.navbar {
     display: flex;
-    align-items: center;
+    margin-right: 10px;
 }
 
-a{
-    text-decoration: wavy;
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
+.navbar a:hover{
+    background-color: rgb(192, 166, 110)
 }
+
 
 .Logo{
     display: flex;
@@ -27,5 +41,22 @@ a{
     width: 60px;
     height: auto;
     margin-right: 20px;
+
+}
+
+
+a{
+    text-decoration: wavy;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+    margin-right: 20px;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    justify-content: space-between;
 
 }
