@@ -10,6 +10,7 @@ class Home extends BaseController
         echo view('Header', $data);
         echo view('Barradenavegacion');
         echo view('Productos');
+        echo view('Menudeproductos');
         echo view('Footer');
     }
 
@@ -19,6 +20,7 @@ class Home extends BaseController
         echo view('Header', $data);
         echo view('Barradenavegacion');
         echo view('Productos');
+        echo view('Menudeproductos');
         echo view('Footer');
     }
 
@@ -37,6 +39,32 @@ class Home extends BaseController
         echo view('Header', $data);
         echo view('Barradenavegacion');
         echo view('SobreNosotros');
+        echo view('Footer');
+    }
+    public function contactenos()
+    {
+        $data['titulo']='Contactenos';
+        echo view('Header', $data);
+        echo view('Barradenavegacion');
+        echo view('Contactenos');
+        echo view('Footer');
+    }
+
+    public function condiciones()
+    {
+        $data['titulo']='condiciones';
+        echo view('Header', $data);
+        echo view('Barradenavegacion');
+        echo view('TerminosyCondiciones');
+        echo view('Footer');
+    }
+
+    public function comercializacion()
+    {
+        $data['titulo']='comercializacion';
+        echo view('Header', $data);
+        echo view('Barradenavegacion');
+        echo view('Comercializacion');
         echo view('Footer');
     }
 

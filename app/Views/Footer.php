@@ -1,11 +1,24 @@
-<section class="contacto">
-    <h2 class="title" style="color:white">Contáctenos</h2>
-    <p style="color:white">
-        3794-#######
+<footer class="footer">
+  <div class="footer-content">
+    <div class="iconos">
+      <a href="https://www.instagram.com/cafeleblanc_ve/">
+        <img src="assets/img/Instagram.png" alt="icono instagram" class="icono-img">
+      </a>
+      <a href="https://web.whatsapp.com">
+        <img src="assets/img/whatsapp.png" alt="icono whatsapp" class="icono-img">
+      </a>
+    </div>
+
+    <p class="footer-text">
+      | Leblanc™ todos los derechos registrados 2025 |
     </p>
-    <a href="https://www.google.com/maps/place/CAFETERÍA+LE+BLANC/..." class="mapa">
-        <img src="assets/img/mapa.png" alt="Mapa" width="300px" class="Mapa">
-    </a>
-</section>
+
+    <nav class="footer-nav">
+      <a href="<?php echo base_url('contactenos');?>" class="nav-link">Contáctenos</a>
+      <a href="<?php echo base_url('nosotros');?>" class="nav-link">Sobre nosotros</a>
+      <a href="<?php echo base_url('condiciones');?>" class="nav-link">Terminos y condiciones</a>
+    </nav>
+  </div>
+</footer>
 </body>
 </html>
