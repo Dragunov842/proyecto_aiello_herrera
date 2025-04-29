@@ -1,9 +1,5 @@
 <!doctype html>
 <html lang="en">
-    
-    <body>
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-
 <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +15,6 @@
                 background-position: center center;
             }
         </style>
-    </head>
 <header>
     <div class="Logo">
         <a href="<?php echo base_url('principio');?>">

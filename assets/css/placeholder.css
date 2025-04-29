@@ -1,0 +1,92 @@
+
+
+
+
+/* Cambia el color del texto de entrada y el fondo cuando el campo está enfocado */
+#miInput .form-control {
+  background-color: #333;
+  color: white;
+  outline: none;
+  /* Elimina el estilo de enfoque predeterminado */
+}
+
+#miInput .form-control:focus {
+  background-color: #333;
+  color: white;
+  outline: none;
+  /* Elimina el estilo de enfoque predeterminado */
+}
+
+/* Cambia el color del placeholder */
+#miInput .form-control::placeholder {
+  color: white;
+}
+
+.hr, .lin{
+  border: none;
+  border-top: 2px solid black;
+  height: 2px;
+  width: 100%;
+}
+
+
+.hr, .ver{
+    border:         none;
+    border-left:    1px solid hsla(200, 10%, 50%,100);
+    height:         100%;
+    width:          1px;  
+
+}
+
+.hr, .prueba{
+  border:         none;
+  border-left:    5px solid hsla(200, 10%, 50%,100);
+  height:         100%;
+  width:          1px;  
+
+}
+.bg-dark-fondo { 
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.contenido{
+  background-color:  white;
+}
+
+
+
+
+/* Estilos para los elementos dentro del formulario */
+.bg-dark-fondo h5,
+.bg-dark-fondo p,
+.bg-dark-fondo input[type="text"],
+.bg-dark-fondo button {
+    color: white;
+}
+
+/* Estilos específicos para el input */
+.bg-dark-fondo input[type="text"] {
+    background-color: #333;
+    color: white;
+    outline: none;
+    padding: 5px 10px;
+}
+
+
+
+.bg-dark-fondo .form-control::placeholder {
+  color: white;
+}
+
+
+
+
+
+
+/* Estilos para el footer */
+
+
+
+
+

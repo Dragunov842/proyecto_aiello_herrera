@@ -3,3 +3,6 @@
         <a href="<?php echo base_url('comercializacion');?>" class="nav-link">Comercializacion</a>
     </nav>
 </header>
+</head>
+<body>
+<script src="assets/js/bootstrap.bundle.min.js"></script>

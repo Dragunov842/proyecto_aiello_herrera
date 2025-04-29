@@ -19,6 +19,19 @@
       <a href="<?php echo base_url('condiciones');?>" class="nav-link">Terminos y condiciones</a>
     </nav>
   </div>
+  <div class="col-md-3 offset-md-4 mb-3">
+                    <h5> Suscribete Para Conocer Novedades</h5>
+                    <p>Mensualmente con Ofertas y Novedades Exclusivas</p>
+                    <div class="d-flex flex-column flex-sm-row w-200 gap-2">
+                        <form class="form-outline mt-2" id="miInput">
+                            <input class="form-control" type="text" placeholder="Correo Electronico" aria-label="text">
+                        </form>
+                        <button class="btn btn-primary" type="button">Suscribirse!</button>
+                    </div>
+  </div>
+
+
+
 </footer>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <section class="menu-compras">
-    <h2 class="title" style="color:white; text-align:center;">Menú de Productos</h2>
+    <h2 class="title" style="color:white; text-align:center; margin-top:100px;">Menú de Productos</h2>
 
     <div class="container mt-4">
         <div class="row g-4">

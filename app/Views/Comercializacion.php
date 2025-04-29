@@ -1,5 +1,5 @@
 <section class="comercializacion">
-    <h2 class="title" style="color:white">Comercializacion</h2>
+    <h2 class="title" style="color:white; margin-top:100px;">Comercializacion</h2>
     <p style="color:white">
     <br> Medios de Pago y Comercialización
     En Leblanc trabajamos para brindarte una experiencia de compra cómoda, segura y transparente.<br>

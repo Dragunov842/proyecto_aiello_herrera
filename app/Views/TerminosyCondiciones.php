@@ -1,5 +1,5 @@
 <section class="condiciones">
-    <h2 class="title" style="color:white">Terminos y condiciones</h2>
+    <h2 class="title" style="color:white; margin-top:100px;">Terminos y condiciones</h2>
     <p style="color:white">
     Bienvenido a Leblanc. Al acceder y utilizar nuestro sitio web (en adelante, "el Sitio"), aceptás quedar vinculado por los siguientes Términos y Condiciones de Uso. Te pedimos que los leas atentamente. Si no estás de acuerdo con ellos, te solicitamos que no utilices este Sitio.<br>
 
