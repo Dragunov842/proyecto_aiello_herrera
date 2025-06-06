@@ -5,7 +5,7 @@
                 <h4>Registrarse</h4>
                 <!-- usamos el servicio de validación de codeigniter Services::validation() -->
                 <?php $validation = \Config\Services::validation(); ?>
-                <form method="post" action="<?= base_url('/enviar-form') ?>">
+                <form action="<?php echo base_url('registrar') ?>">
                     <?= csrf_field(); ?> <!-- genera un campo oculto o token de seguridad -->
                     
                     <?php if (!empty(session()->getFlashdata('fail'))): ?>
@@ -32,4 +32,45 @@
                             <label for="exampleFormControlTextarea1" class="form-label">Apellido</label>
                             <input type="text" name="apellido" class="form-control" placeholder="apellido">
                             <!-- Error -->
-                            <?php if ($validation->getError('apellido')) ?>
+                            <?php if ($validation->getError('apellido')){ ?>
+                            <div class="alert alert-danger mt-2">
+                                <?= $error = $validation->getError('apellido'); ?>
+                                </div>
+                            <?php } ?>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Nombre de Usuario</label>
+                            <input type="text" name="usuario" class="form-control" placeholder="user">
+                            <!-- Error -->
+                            <?php if ($validation->getError('usuario')){ ?>
+                            <div class="alert alert-danger mt-2">
+                                <?= $error = $validation->getError('usuario'); ?>
+                                </div>
+                            <?php } ?>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Email</label>
+                            <input type="text" name="email" class="form-control" placeholder="email">
+                            <!-- Error -->
+                            <?php if ($validation->getError('email')){?>
+                            <div class="alert alert-danger mt-2">
+                                <?= $error = $validation->getError('email'); ?>
+                                </div>
+                            <?php } ?>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">contraseña</label>
+                            <input type="password" name="pass" class="form-control" placeholder="contraseña">
+                            <!-- Error -->
+                            <?php if ($validation->getError('contraseña')) {?>
+                            <div class="alert alert-danger mt-2">
+                                <?= $error = $validation->getError('contraseña'); ?>
+                                </div>
+                            <?php } ?>
+                        </div>
+                        <input type="submit" value="Enviar">
+                     </form>
+            </div>
+        </div>
+    </div>
+</div>

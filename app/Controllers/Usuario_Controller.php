@@ -1,6 +1,6 @@
 <?php
 namespace App\Controllers;
-use App\Models\Usuarios_model;
+use App\Models\usuarios_model;
 use CodeIgniter\Controller;
 
 class Usuario_controller extends Controller{
@@ -11,10 +11,10 @@ class Usuario_controller extends Controller{
 
     public function create() {
         $dato['titulo'] = 'Registro';
-        echo view('front/head_view', $dato);
-        echo view('front/nav_view');
-        echo view('back/usuario/registro');
-        echo view('front/footer_view');
+        echo view('Header', $dato);
+        echo view('Barradenavegacion');
+        echo view('formularios');
+        echo view('Footer');
     }
 
     public function formValidation() {
@@ -24,18 +24,19 @@ class Usuario_controller extends Controller{
             'apellido'  => 'required|min_length[3]|max_length[25]',
             'usuario'   => 'required|min_length[3]',
             'email'     => 'required|min_length[4]|max_length[100]|valid_email|is_unique[usuarios.email]',
-            'pass'      => 'required|min_length[3]|max_length[10]'
-        ]);
-    }
+            'contraseña'  => 'required|min_length[3]|max_length[10]'
+        ],
+    );
 
-$formModel = new Usuarios_model();
+
+$formModel = new usuarios_model();
 
 if (!$input) {
     $data['titulo'] = 'Registro';
-    echo view('front/head_view', $data);
-    echo view('front/nav_view');
-    echo view('back/usuario/registro', ['validation' => $this->validator]);
-    echo view('front/footer_view');
+    echo view('Header', $data);
+    echo view('Barradenavegacion');
+    echo view('formularios', ['validation' => $this->validator]);
+    echo view('Footer');
 
 } else {
     $formModel->save([
@@ -49,6 +50,7 @@ if (!$input) {
 
     // Flashdata funciona solo en redirigir la función en el controlador en la vista de carga.
     session()->setFlashdata('success', 'Usuario registrado con exito');
-    return $this->response->redirect(to_url('/registro'));  
+    return $this->response->redirect(to_url('Productos'));  
     }
+}
 }

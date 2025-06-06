@@ -10,7 +10,6 @@
 body {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
     background-image: url('../img/Wallpaper2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -28,7 +27,6 @@ body {
 a {
     color: black;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
     margin-right: 20px;
 }
 
@@ -176,16 +174,11 @@ section {
         flex-direction: column;
         height: auto;
         padding: 10px;
-        font-size: 20px;
     }
 
     .navbar {
         flex-direction: column;
         margin-right: 0;
-    }
-
-    a{
-      font-size: 20px;
     }
 
     .navbar a {

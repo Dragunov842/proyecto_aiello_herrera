@@ -11,7 +11,6 @@ class Home extends BaseController
         echo view('Barradenavegacion');
         echo view('Productos');
         echo view('Menudeproductos');
-        echo view('Footer');
         echo view('formularios');
     }
 
