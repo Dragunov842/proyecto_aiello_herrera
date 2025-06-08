@@ -13,7 +13,7 @@ class Usuario_controller extends Controller{
         $dato['titulo'] = 'registrar';
         echo view('Header', $dato);
         echo view('Barradenavegacion');
-        echo view('formularios');
+        echo view('Formulario_usuario');
         echo view('Footer');
     }
 
@@ -35,18 +35,19 @@ if (!$input) {
     $data['titulo'] = 'registrar';
     echo view('Header', $data);
     echo view('Barradenavegacion');
-    echo view('formularios', ['validation' => $this->validator]);
+    echo view('Formulario_usuario', ['validation' => $this->validator]);
     echo view('Footer');
 
 } else {
-    $formModel->save([
-        'nombre'  => $this->request->getVar('nombre'),
-        'apellido'=> $this->request->getVar('apellido'),
-        'usuario' => $this->request->getVar('usuario'),
-        'email'   => $this->request->getVar('email'),
-        'pass'    => password_hash($this->request->getVar('pass'), PASSWORD_DEFAULT)
-        // password_hash() crea un nuevo hash de contraseña usando un algoritmo de hash de único sentido.
-    ]);
+$formModel->save([
+    'nombre'     => $this->request->getVar('nombre'),
+    'apellido'   => $this->request->getVar('apellido'),
+    'usuario'    => $this->request->getVar('usuario'),
+    'email'      => $this->request->getVar('email'),
+    'contraseña' => password_hash($this->request->getVar('contraseña'), PASSWORD_DEFAULT),
+    'perfil_id'  => $this->request->getVar('perfil_id'),
+]);
+
 
     // Flashdata funciona solo en redirigir la función en el controlador en la vista de carga.
     session()->setFlashdata('success', 'Usuario registrado con exito');

@@ -16,11 +16,11 @@ class Usuarios_model extends Model
         "email"      => "required|valid_email|is_unique[usuarios.email,id_usuario,{id_usuario}]", 
         "usuario"       => "required|is_unique[usuarios.usuario,id_usuario,{id_usuario}]",
         "contraseña"   => "required|min_length[4]",
-        "perfil_id"  => "required|min_length[8]",
+        "perfil_id"  => "required|is_natural_no_zero",
     ];  
 
     protected $validationMessages = [
-        "nombre"           => [
+            "nombre"           => [
             "required"      => 'Campo nombre obligatorio',
             "min_length"    => 'El Nombre debe tener mínimo 3 caracteres',
             "max_length"    => 'El Nombre debe tener máximo 50 caracteres',
