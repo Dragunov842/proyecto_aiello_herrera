@@ -17,7 +17,7 @@
         </style>
 <header>
     <div class="Logo">
-        <a href="<?php echo base_url('principio');?>">
+        <a href="<?php echo base_url('/');?>">
             <img src="assets/img/Logo1.png" alt="Logo Leblanc" class="Logo-img">
         </a>
         <h1 class="Nombre-empresa">Leblanc</h1>

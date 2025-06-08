@@ -10,7 +10,7 @@ class Usuario_controller extends Controller{
     }
 
     public function create() {
-        $dato['titulo'] = 'Registro';
+        $dato['titulo'] = 'registrar';
         echo view('Header', $dato);
         echo view('Barradenavegacion');
         echo view('formularios');
@@ -32,7 +32,7 @@ class Usuario_controller extends Controller{
 $formModel = new usuarios_model();
 
 if (!$input) {
-    $data['titulo'] = 'Registro';
+    $data['titulo'] = 'registrar';
     echo view('Header', $data);
     echo view('Barradenavegacion');
     echo view('formularios', ['validation' => $this->validator]);
@@ -50,7 +50,7 @@ if (!$input) {
 
     // Flashdata funciona solo en redirigir la función en el controlador en la vista de carga.
     session()->setFlashdata('success', 'Usuario registrado con exito');
-    return $this->response->redirect(to_url('Productos'));  
+    return redirect()->route('productos');  
     }
 }
 }

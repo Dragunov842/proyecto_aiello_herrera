@@ -14,3 +14,4 @@ $routes->get('condiciones', 'Home::condiciones');
 $routes->get('comercializacion', 'Home::comercializacion');
 
 $routes->get('registrar', 'Usuario_controller::create');
+$routes->post('enviar-form', 'Usuario_controller::formValidation');

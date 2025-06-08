@@ -8,7 +8,7 @@ class Usuarios_model extends Model
     protected $table = 'usuarios';
     protected $primaryKey = 'id_usuario';
     protected $allowedFields = ['nombre', 'apellido', 'email', 'usuario', 'contraseña', 'perfil_id', 'baja'];
-}
+
 
  protected $validationRules = [
         "nombre"       => "required|min_length[3]|max_length[50]",

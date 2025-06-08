@@ -5,7 +5,7 @@
                 <h4>Registrarse</h4>
                 <!-- usamos el servicio de validación de codeigniter Services::validation() -->
                 <?php $validation = \Config\Services::validation(); ?>
-                <form action="<?php echo base_url('registrar') ?>">
+                <form method="post" action="<?php echo base_url('enviar-form') ?>">
                     <?= csrf_field(); ?> <!-- genera un campo oculto o token de seguridad -->
                     
                     <?php if (!empty(session()->getFlashdata('fail'))): ?>
@@ -60,7 +60,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlTextarea1" class="form-label">contraseña</label>
-                            <input type="password" name="pass" class="form-control" placeholder="contraseña">
+                            <input type="password" name="contraseña" class="form-control" placeholder="contraseña">
                             <!-- Error -->
                             <?php if ($validation->getError('contraseña')) {?>
                             <div class="alert alert-danger mt-2">
