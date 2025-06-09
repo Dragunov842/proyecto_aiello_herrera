@@ -17,3 +17,8 @@ $routes->get('registrar', 'Usuario_controller::create');
 $routes->post('enviar-form', 'Usuario_controller::formValidation');
 $routes->get('nueva-categoria', 'Categoria_controller::nueva');
 $routes->post('guardar-categoria', 'Categoria_controller::guardar');
+$routes->get('producto/crear', 'Producto_controller::create');
+$routes->post('producto/guardar', 'Producto_controller::formValidation');
+$routes->get('login', 'Usuario_controller::login');           
+$routes->post('iniciarSesion', 'Usuario_controller::inicioSesion');  
+

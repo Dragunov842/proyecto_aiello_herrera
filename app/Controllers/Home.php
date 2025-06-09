@@ -13,6 +13,8 @@ class Home extends BaseController
         echo view('Menudeproductos');
         echo view('Formulario_usuario');
         echo view('Formulario_categoria');
+        echo view('Formulario_producto');
+        echo view('Login');
     }
 
     public function principio()

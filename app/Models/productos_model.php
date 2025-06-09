@@ -3,45 +3,45 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class modelo_producto extends Model{
+class productos_model extends Model{
     protected $table            = 'productos';
-    protected $primaryKey       = 'pd_id';
-    protected $allowedFields    = ['pd_nombre', 'pd_descripcion', 'pd_precio', 'pd_descuento','ct_id', 'pd_cantidad', "pd_img", "pd_activo"];
+    protected $primaryKey       = 'producto_id';
+    protected $allowedFields    = ['nombre', 'descripcion', 'precio', 'descuento','id_categoria', 'cantidad', "img", "activo"];
 
     protected $validationRules  = [
 
-        "pd_nombre"         => "required|min_length[3]",
-        "pd_descripcion"    => "required|max_length[250]",
-        "pd_precio"         => "required",
-        "pd_descuento"      => "required",
-        "ct_id"             => "required",
-        "pd_cantidad"       => "required",
-        "pd_img"            => "is_image[pd_Imagen]",
+        "nombre"         => "required|min_length[3]",
+        "descripcion"    => "required|max_length[250]",
+        "precio"         => "required",
+        "descuento"      => "required",
+        "id_categoria"             => "required",
+        "cantidad"       => "required",
+        "img"            => "is_image[pd_Imagen]",
     ]; 
 
     protected $validationMessages = [
 
-        "pd_nombre"         => [
+        "nombre"         => [
             "required"      => 'Campo de nombre del producto es obligatorio',
             "min_length"    => 'El campo nombre del producto debe tener al menos 3 caracteres'
         ],
-        "pd_descripcion"    => [
+        "descripcion"    => [
             "required"      => 'Campo de descripción es obligatorio',
             "max_length"    => 'El campo descripción debe tener como máximo 250 caracteres'
         ],
-        "pd_precio"         => [
+        "precio"         => [
             "required"      => 'Campo de precio es obligatorio',
         ],
-        "pd_descuento"      => [
+        "descuento"      => [
             "required"      => 'Campo de categoria es obligatorio',
         ],
-        "ct_id"             => [
+        "id_categoria"             => [
             "required"      => 'Campo de categoria es obligatorio',
         ],
-        "pd_cantidad"       => [
+        "cantidad"       => [
             "required"      => 'El campo de cantidad es obligatorio',
         ],
-        "pd_img"            => [
+        "img"            => [
             "is_image"      => 'Se debe ingresar una imagen jpg/png',
             "max_size"      => 'El máximo tamaño es de 4096'
         ]

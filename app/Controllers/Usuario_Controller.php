@@ -54,4 +54,74 @@ $formModel->save([
     return redirect()->route('productos');  
     }
 }
+
+   public function login()
+    {
+        $data = ["titulo" => "Leblanc - Iniciar Sesión"];
+        echo view('Header', $data);
+        echo view("Login");
+        echo view('Footer');
+    }
+
+
+    // Se verifica los datos ingresados para iniciar, si cumple la verificación inicia sesión
+    public function inicioSesion()
+{
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $critValidacion = $this->validate(
+            [
+                "usuario"     => "required",
+                "contraseña"  => "required"
+            ],
+            [
+                "usuario" => [
+                    "required" => 'Campo de usuario obligatorio',
+                ],
+                "contraseña" => [
+                    "required" => 'Campo de contraseña obligatorio',
+                ]
+            ]
+        );
+
+        if ($critValidacion) {
+            $userModel = new usuarios_model();
+            $datosUser = $userModel->where('usuario', $_POST['usuario'])->first();
+
+            if ($datosUser != null) {
+                if (password_verify($_POST['contraseña'], $datosUser['contraseña'])) {
+                    session()->set([
+                        'id'         => $datosUser['id_usuario'],
+                        'usuario'    => $datosUser['usuario'],
+                        'perfil_id'  => $datosUser['perfil_id'],
+                        'nombre'     => $datosUser['nombre'],
+                        'apellido'   => $datosUser['apellido'],
+                        'email'      => $datosUser['email'],
+                        'is_logged'  => true
+                    ]);
+
+                    return redirect()->to(base_url(''))->with('alertaExitosa', 'Inicio de sesión exitoso!');
+                } else {
+                    $datos['errores'] = "Contraseña incorrecta";
+                }
+            } else {
+                $datos['errores'] = "Usuario incorrecto";
+            }
+        } else {
+            $datos["validation"] = $this->validator->getErrors();
+        }
+
+        $data = ["titulo" => "Leblanc - Iniciar Sesión"];
+        echo view("Barradenavegacion", $data);
+        echo view("Login", $datos ?? []);
+        echo view("Footer");
+    }
+}
+
+    
+    // Se cierra la sesión
+    public function cerrarSesion()
+    {
+        session()->destroy();
+        return redirect()->to(base_url('').'/');
+    }
 }
