@@ -1,12 +1,13 @@
-<div class="container pt-5 mt-5 mb-5">
-    <div class="card-header text-justify">
-        <div class="row d-flex justify-content-center">
-            <div class="card col-lg-6">
-                <h4 class="mt-3 text-center">Registrarse</h4>
+<body>
+    <div class="container pt-5 mt-5 mb-5">
+        <div class="card-header text-justify">
+            <div class="row d-flex justify-content-center">
+                <div class="card col-lg-6">
+                    <h4 class="mt-3 text-center">Registrarse</h4>
 
-                <?php $validation = \Config\Services::validation(); ?>
+                    <?php $validation = \Config\Services::validation(); ?>
 
-                <form method="post" action="<?= base_url('enviar-form') ?>">
+                    <form method="post" action="<?= base_url('enviar-form') ?>">
                     <?= csrf_field(); ?>
 
                     <?php if (session()->getFlashdata('fail')): ?>
@@ -76,4 +77,3 @@
         </div>
     </div>
 </div>
-

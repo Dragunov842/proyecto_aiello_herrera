@@ -11,10 +11,7 @@ class Home extends BaseController
         echo view('Barradenavegacion');
         echo view('Productos');
         echo view('Menudeproductos');
-        echo view('Formulario_usuario');
-        echo view('Formulario_categoria');
-        echo view('Formulario_producto');
-        echo view('Login');
+        echo view('Footer');
     }
 
     public function principio()
@@ -32,7 +29,7 @@ class Home extends BaseController
         $data['titulo']='Productos';
         echo view('Header', $data);
         echo view('Barradenavegacion');
-        echo view('Menudeproductos');
+        echo view('Productos');
         echo view('Footer');
     }
 
@@ -70,5 +67,5 @@ class Home extends BaseController
         echo view('Comercializacion');
         echo view('Footer');
     }
-
+    
 }

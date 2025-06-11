@@ -1,4 +1,8 @@
-<div class="container mt-5">
+<body>
+  <div class="container pt-5 mt-5 mb-5">
+    <div class="card-header text-justify">
+      <div class="row d-flex justify-content-center">
+        <div class="card col-lg-6">
   <h2>Iniciar Sesión</h2>
   <form method="post" action="<?= base_url('iniciarSesion') ?>">
     
@@ -36,7 +40,10 @@
 
     <!-- Link de registro -->
     <div class="mt-3 text-center">
-      <small>¿No tienes una cuenta? <a href="<?= base_url('Formulario_usuario') ?>">Registrarse</a></small>
+      <small>¿No tienes una cuenta? <a href="<?= base_url('registrar') ?>">Registrarse</a></small>
     </div>
   </form>
+      </div>
+    </div>
+  </div>
 </div>
