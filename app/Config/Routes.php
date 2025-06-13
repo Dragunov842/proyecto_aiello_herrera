@@ -24,4 +24,17 @@ $routes->post('producto/guardar', 'Producto_controller::formValidation');
 $routes->get('login', 'Usuario_controller::login');           
 $routes->post('iniciarSesion', 'Usuario_controller::inicioSesion'); 
 $routes->get('cerrarSesion', 'Usuario_controller::cerrarSesion'); 
+$routes->get('listado-productos', 'Listado_Productos::listarProductos');
+$routes->post('listado-productos/filtrar', 'Listado_Productos::filtrarProducto');
+$routes->get('editar', 'Productocontroller::singleproducto');
+$routes->post('modifica', 'Productocontroller::modifica');
+$routes->get('borrar', 'Productocontroller::deleteproducto');
+$routes->get('eliminados', 'Productocontroller::eliminados');
+$routes->get('activar_pro', 'Productocontroller::activarproducto');
+$routes->get('Crud_usuarios','Usuario_controller::index');
+$routes->get('editarUsuario(:num)', 'Usuario_controller::editar/$1');
+$routes->post('actualizarUsuarios(:num)', 'Usuario_controller::actualizar/$1');
+$routes->get('eliminarUsuario(:num)', 'Usuario_controller::eliminar/$1');
+$routes->get('usuariosEliminados', 'Usuario_controller::eliminados');
+$routes->get('activarusuario/(:num)', 'Usuario_controller::activar/$1');
 
