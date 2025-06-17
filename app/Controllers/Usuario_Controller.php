@@ -44,7 +44,7 @@ class Usuario_controller extends Controller {
                 'email'      => $this->request->getVar('email'),
                 'contraseña' => password_hash($this->request->getVar('contraseña'), PASSWORD_DEFAULT),
                 'perfil_id'  => $this->request->getVar('perfil_id'),
-                'eliminado'  => 'NO',
+                'baja'  => 'NO',
             ]);
 
             session()->setFlashdata('success', 'Usuario registrado con éxito');
@@ -111,7 +111,7 @@ class Usuario_controller extends Controller {
     // Mostrar todos los usuarios no eliminados
     public function index() {
         $modelo = new usuarios_model();
-        $data['usuarios'] = $modelo->where('eliminado', 'NO')->findAll();
+        $data['usuarios'] = $modelo->where('baja', 'NO')->findAll();
         $data['titulo'] = 'Listado de Usuarios';
         echo view('Header', $data);
         echo view('Barradenavegacion');
@@ -131,72 +131,73 @@ class Usuario_controller extends Controller {
         $data['titulo'] = 'Editar Usuario';
         echo view('Header', $data);
         echo view('Barradenavegacion');
-        echo view('Formulario_usuario', $data);
+        echo view('formularios', $data);
         echo view('Footer');
     }
+    
+        public function actualizar()
+    {
+        // Obtener el ID del usuario desde la sesión
+        $idUsuario = session('id_usuario');
 
-    // Actualizar usuario
-    public function actualizar($id) {
-        $modelo = new usuarios_model();
-
-        $input = $this->validate([
-            'nombre'   => 'required|min_length[3]',
-            'apellido' => 'required|min_length[3]|max_length[25]',
-            'usuario'  => 'required|min_length[3]',
-            'email'    => 'required|min_length[4]|max_length[100]|valid_email'
-        ]);
-
-        if (!$input) {
-            $data['validation'] = $this->validator;
-            $data['usuario'] = $modelo->find($id);
-            $data['titulo'] = 'Editar Usuario';
-            echo view('Header', $data);
-            echo view('Barradenavegacion');
-            echo view('Formulario_usuario', $data);
-            echo view('Footer');
-        } else {
-            $datos = [
-                'nombre'    => $this->request->getVar('nombre'),
-                'apellido'  => $this->request->getVar('apellido'),
-                'usuario'   => $this->request->getVar('usuario'),
-                'email'     => $this->request->getVar('email'),
-                'perfil_id' => $this->request->getVar('perfil_id')
-            ];
-
-            if ($this->request->getVar('contraseña')) {
-                $datos['contraseña'] = password_hash($this->request->getVar('contraseña'), PASSWORD_DEFAULT);
-            }
-
-            $modelo->update($id, $datos);
-            session()->setFlashdata('success', 'Usuario actualizado correctamente');
-            return redirect()->to(base_url('usuarios'));
+        // Verificar si el ID del usuario está disponible en la sesión
+        if (!$idUsuario) {
+            session()->setFlashdata('error', 'Debes iniciar sesión para realizar esta acción.');
+            return redirect()->to('login');
         }
+
+        // Obtener datos del formulario
+        $nombre = $this->request->getPost('nombre');
+        $apellido = $this->request->getPost('apellido');
+        $email = $this->request->getPost('email');
+        $contraseña = $this->request->getPost('contraseña');
+
+        $data = [
+            'nombre' => $nombre,
+            'apellido' => $apellido,
+            'correoElectronico' => $email,
+        ];
+
+        // Solo actualizar la contraseña si se ha ingresado una nueva
+        if (!empty($contraseña)) {
+            $data['contrasenia'] = password_hash($contraseña, PASSWORD_BCRYPT); // Encriptar la nueva contraseña
+        }
+
+        // Actualizar datos en la base de datos
+        $this->usuarioModel->update($id_usuario, $data);
+
+        // Actualizar los datos de la sesión
+        session()->set('nombre', $nombre);
+        session()->set('apellido', $apellido);
+
+        return redirect()->to('/')->with('mensaje', 'Datos actualizados correctamente.');
     }
+}
 
     // Eliminar usuario (lógico)
     public function eliminar($id) {
         $modelo = new usuarios_model();
-        $modelo->update($id, ['eliminado' => 'SI']);
+        $modelo->update($id, ['baja' => 'SI']);
         session()->setFlashdata('success', 'Usuario eliminado correctamente');
-        return redirect()->to(base_url('usuarios'));
+        return redirect()->to(base_url('Crud_usuarios'));
     }
 
     // Mostrar usuarios eliminados
     public function eliminados() {
         $modelo = new usuarios_model();
-        $data['usuarios'] = $modelo->where('eliminado', 'SI')->findAll();
+        $data['usuarios'] = $modelo->where('baja', 'SI')->findAll();
         $data['titulo'] = 'Usuarios Eliminados';
         echo view('Header', $data);
         echo view('Barradenavegacion');
-        echo view('Usuarios_eliminados', $data);
+        echo view('Usuarios_Eliminados', $data);
         echo view('Footer');
     }
 
     // Reactivar usuario eliminado
     public function activar($id) {
         $modelo = new usuarios_model();
-        $modelo->update($id, ['eliminado' => 'NO']);
+        $modelo->update($id, ['baja' => 'NO']);
         session()->setFlashdata('success', 'Usuario activado correctamente');
-        return redirect()->to(base_url('usuarios/eliminados'));
+        return redirect()->to(base_url('usuariosEliminados'));
     }
 }

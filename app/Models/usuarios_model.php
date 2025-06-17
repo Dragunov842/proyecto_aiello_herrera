@@ -14,8 +14,8 @@ class Usuarios_model extends Model
         "nombre"       => "required|min_length[3]|max_length[50]",
         "apellido"   => "required|min_length[3]|max_length[50]",
         "email"      => "required|valid_email|is_unique[usuarios.email,id_usuario,{id_usuario}]", 
-        "usuario"       => "required|is_unique[usuarios.usuario,id_usuario,{id_usuario}]",
-        "contraseña"   => "required|min_length[4]",
+        "usuario"      => "required|is_unique[usuarios.usuario,id_usuario,{id_usuario}]",
+        "contraseña" => "permit_empty|min_length[4]",
         "perfil_id"  => "required|is_natural_no_zero",
     ];  
 
@@ -30,11 +30,12 @@ class Usuarios_model extends Model
             "min_length"    => 'El Apellido debe tener mínimo 3 caracteres',
             "max_length"    => 'El Apellido debe tener máximo 50 caracteres',
         ],
-        "correo"          => [
-            "required"      => 'Campo correo electrónico obligatorio',
+        "email" => [
+            "required"      => 'Campo email electrónico obligatorio',
             "valid_email"   => 'Debe ingresar una dirección de correo válida',
-           "is_unique"     => 'Dirección de correo ya asociada a una cuenta',
+            "is_unique"     => 'Dirección de correo ya asociada a una cuenta',
         ],
+
         "usuario"           => [
             "required"      => 'Campo usuario obligatorio',
             "is_unique"     => 'Nombre de usuario ya existente',
@@ -49,7 +50,7 @@ class Usuarios_model extends Model
         $builder->groupStart();
         $builder->like('nombre', $term);
         $builder->orLike('apellido', $term);
-        $builder->orLike('correo', $term);
+        $builder->orLike('email', $term);
         $builder->orLike('usuario', $term);
         $builder->groupEnd();
 

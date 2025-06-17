@@ -1,5 +1,5 @@
 <div class="container mt-5">
-    <h2 class="mb-4">Usuarios Eliminados</h2>
+    <h2 class="title" style="color:white; margin-top:100px;">Usuarios Eliminados</h2>
 
     <?php if (!empty($usuarios) && is_array($usuarios)) : ?>
         <table class="table table-bordered table-striped">
@@ -24,7 +24,7 @@
                         <td><?= esc($usuario['email']) ?></td>
                         <td><?= esc($usuario['perfil_id']) ?></td>
                         <td>
-                            <a href="<?= site_url('activarusuario/' . $usuario['id_usuario']) ?>" class="btn btn-success btn-sm">
+                            <a href="<?= site_url('activarusuario/'.$usuario['id_usuario']) ?>" class="btn btn-success btn-sm">
                                 Restaurar
                             </a>
                         </td>

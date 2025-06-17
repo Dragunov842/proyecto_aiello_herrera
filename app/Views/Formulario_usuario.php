@@ -67,6 +67,8 @@
                         <!-- Perfil (oculto o visible según necesidad) -->
                         <input type="hidden" name="perfil_id" value="2">
 
+                        <input type="hidden" name="baja" value="NO">
+
                         <div class="text-center">
                             <input type="submit" value="Registrarse" class="btn btn-primary mt-2">
                         </div>
