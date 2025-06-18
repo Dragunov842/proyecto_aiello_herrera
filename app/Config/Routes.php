@@ -37,4 +37,15 @@ $routes->get('usuariosEliminados', 'Usuario_controller::eliminados');
 $routes->get('activarusuario/(:num)', 'Usuario_controller::activar/$1');
 $routes->get('editarUsuario', 'Usuario_controller::editar'); 
 $routes->post('actualizarUsuario', 'Usuario_controller::actualizar'); 
+$routes->get('carrito', 'CarritoController::index');              
+$routes->get('carrito/agregar/(:num)', 'CarritoController::agregar/$1'); 
+$routes->post('carrito/eliminar', 'CarritoController::eliminarProducto');
+$routes->get('carrito/vaciar', 'CarritoController::vaciar');      
+$routes->post('carrito/finalizar', 'CarritoController::finalizarCompra'); 
+
+$routes->get('ventas', 'VentasCabeceraController::listarVentas');   
+
+$routes->get('ventas/detalle/(:num)', 'VentasDetalleController::verDetalle/$1'); 
+
+$routes->post('ventas/crear', 'VentasCabeceraController::crear');
 
