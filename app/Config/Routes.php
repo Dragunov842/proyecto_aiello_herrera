@@ -32,9 +32,9 @@ $routes->get('borrar', 'Productocontroller::deleteproducto');
 $routes->get('eliminados', 'Productocontroller::eliminados');
 $routes->get('activar_pro', 'Productocontroller::activarproducto');
 $routes->get('Crud_usuarios', 'Usuario_controller::index');
-$routes->get('editarUsuario/(:num)', 'Usuario_controller::editar/$1');
-$routes->post('actualizarUsuario/(:num)', 'Usuario_controller::actualizar/$1');
 $routes->get('eliminarUsuario/(:num)', 'Usuario_controller::eliminar/$1');
 $routes->get('usuariosEliminados', 'Usuario_controller::eliminados');
 $routes->get('activarusuario/(:num)', 'Usuario_controller::activar/$1');
+$routes->get('editarUsuario', 'Usuario_controller::editar'); 
+$routes->post('actualizarUsuario', 'Usuario_controller::actualizar'); 
 
