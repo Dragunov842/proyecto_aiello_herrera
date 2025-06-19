@@ -29,7 +29,7 @@ class Home extends BaseController
         $data['titulo']='Productos';
         echo view('Header', $data);
         echo view('Barradenavegacion');
-        echo view('Productos');
+        echo view('Catalogo');
         echo view('Footer');
     }
 

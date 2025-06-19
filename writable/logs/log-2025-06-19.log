@@ -1,0 +1,1718 @@
+DEBUG - 2025-06-19 01:27:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 01:27:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 01:27:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 01:27:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 01:27:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 01:28:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 01:28:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 01:28:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 01:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 01:29:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 01:29:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 01:29:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 01:29:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 01:30:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 01:30:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 01:30:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 01:32:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 01:32:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 01:57:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 01:57:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 01:58:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 01:58:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 01:59:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 01:59:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 01:59:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 01:59:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 01:59:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 01:59:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 02:00:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 02:00:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 02:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 02:00:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 02:06:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 02:06:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 02:06:59 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Formulario_productos.php"
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Formulario_productos.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Formulario_productos', [], true)
+ 3 APPPATH\Controllers\Producto_controller.php(54): view('Formulario_productos', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 02:07:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 02:07:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 02:14:21 --> ParseError: syntax error, unexpected token "public", expecting end of file
+[Method: GET, Route: producto/crear]
+in APPPATH\Models\productos_model.php on line 90.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\proyecto_aiello_herrera\\app\\Models\\productos_model.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\productos_model')
+ 3 APPPATH\Controllers\Producto_controller.php(14): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\productos_model')
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Producto_controller->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 02:14:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 02:14:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 02:14:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 02:16:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 02:18:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 02:19:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 02:20:00 --> ErrorException: finfo_file(C:\xampp\tmp\php4B5F.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\php4B5F.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\php4B5F.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750299600_55a9264eafe2d3aec9b6.png', [], [...], null, 'img')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('img', 'img', '1750299600_55a9264eafe2d3aec9b6.png', [...], [...], 'img')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(64): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 02:21:16 --> ParseError: syntax error, unexpected single-quoted string "activo", expecting "]"
+[Method: GET, Route: producto/crear]
+in APPPATH\Models\productos_model.php on line 36.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\proyecto_aiello_herrera\\app\\Models\\productos_model.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\productos_model')
+ 3 APPPATH\Controllers\Producto_controller.php(14): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\productos_model')
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Producto_controller->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 02:21:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 02:21:22 --> ParseError: syntax error, unexpected single-quoted string "activo", expecting "]"
+[Method: GET, Route: producto/crear]
+in APPPATH\Models\productos_model.php on line 36.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\proyecto_aiello_herrera\\app\\Models\\productos_model.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\productos_model')
+ 3 APPPATH\Controllers\Producto_controller.php(14): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\productos_model')
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Producto_controller->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 02:21:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 02:22:01 --> ErrorException: finfo_file(C:\xampp\tmp\php238B.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\php238B.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\php238B.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750299721_9d6845e2f6c4d7015f5d.jpg', [], [...], null, 'img')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('img', 'img', '1750299721_9d6845e2f6c4d7015f5d.jpg', [...], [...], 'img')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(64): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 02:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 02:25:18 --> ErrorException: finfo_file(C:\xampp\tmp\php265C.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\php265C.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\php265C.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750299918_fbf3c8bc671123816fb7.jpg', [], [...], null, 'img')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('img', 'img', '1750299918_fbf3c8bc671123816fb7.jpg', [...], [...], 'img')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(64): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 02:28:19 --> ErrorException: Undefined variable $input
+[Method: POST, Route: producto/guardar]
+in APPPATH\Controllers\Producto_controller.php on line 61.
+ 1 APPPATH\Controllers\Producto_controller.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $input', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\app\\Controllers\\Producto_controller.php', 61)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 02:31:34 --> ErrorException: finfo_file(C:\xampp\tmp\phpE503.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\phpE503.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\phpE503.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750300294_c257c8fc7a997ad5ba00.jpg', [], [...], null, 'img')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('img', 'img', '1750300294_c257c8fc7a997ad5ba00.jpg', [...], [...], 'img')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(81): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 02:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 02:33:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 02:33:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 02:33:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 02:33:49 --> CodeIgniter\HTTP\Exceptions\HTTPException: The route for "Catalogo" cannot be found.
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 63.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(63): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('Catalogo')
+ 2 APPPATH\Controllers\Producto_controller.php(93): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 02:36:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 02:36:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 02:36:27 --> ErrorException: Undefined variable $categorias
+[Method: GET, Route: Catalogo]
+in APPPATH\Views\Catalogo.php on line 11.
+ 1 APPPATH\Views\Catalogo.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categorias', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\app\\Views\\Catalogo.php', 11)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyecto_aiello_herrera\\app\\Views\\Catalogo.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Catalogo', [], true)
+ 5 APPPATH\Controllers\Home.php(32): view('Catalogo')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->menuProductos()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 02:40:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 02:40:15 --> ErrorException: Undefined variable $categorias
+[Method: GET, Route: Catalogo]
+in APPPATH\Views\Catalogo.php on line 11.
+ 1 APPPATH\Views\Catalogo.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categorias', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\app\\Views\\Catalogo.php', 11)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyecto_aiello_herrera\\app\\Views\\Catalogo.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Catalogo', [], true)
+ 5 APPPATH\Controllers\Home.php(32): view('Catalogo')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->menuProductos()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 02:40:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 02:40:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 02:40:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 02:40:22 --> ErrorException: Undefined variable $categorias
+[Method: GET, Route: Catalogo]
+in APPPATH\Views\Catalogo.php on line 11.
+ 1 APPPATH\Views\Catalogo.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categorias', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\app\\Views\\Catalogo.php', 11)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyecto_aiello_herrera\\app\\Views\\Catalogo.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Catalogo', [], true)
+ 5 APPPATH\Controllers\Home.php(32): view('Catalogo')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->menuProductos()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 02:41:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 02:41:54 --> ErrorException: Undefined variable $categorias
+[Method: GET, Route: Catalogo]
+in APPPATH\Views\Catalogo.php on line 11.
+ 1 APPPATH\Views\Catalogo.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categorias', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\app\\Views\\Catalogo.php', 11)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyecto_aiello_herrera\\app\\Views\\Catalogo.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Catalogo', [], true)
+ 5 APPPATH\Controllers\Home.php(32): view('Catalogo')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->menuProductos()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 02:45:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 02:45:49 --> ErrorException: Undefined variable $categorias
+[Method: GET, Route: Catalogo]
+in APPPATH\Views\Catalogo.php on line 11.
+ 1 APPPATH\Views\Catalogo.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categorias', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\app\\Views\\Catalogo.php', 11)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyecto_aiello_herrera\\app\\Views\\Catalogo.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Catalogo', [], true)
+ 5 APPPATH\Controllers\Home.php(32): view('Catalogo')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->menuProductos()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 02:47:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 02:47:42 --> ErrorException: Undefined variable $categorias
+[Method: GET, Route: Catalogo]
+in APPPATH\Views\Catalogo.php on line 11.
+ 1 APPPATH\Views\Catalogo.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categorias', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\app\\Views\\Catalogo.php', 11)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyecto_aiello_herrera\\app\\Views\\Catalogo.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Catalogo', [], true)
+ 5 APPPATH\Controllers\Home.php(32): view('Catalogo')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->menuProductos()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 02:51:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 02:51:06 --> ErrorException: Undefined variable $categorias
+[Method: GET, Route: Catalogo]
+in APPPATH\Views\Catalogo.php on line 11.
+ 1 APPPATH\Views\Catalogo.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categorias', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\app\\Views\\Catalogo.php', 11)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyecto_aiello_herrera\\app\\Views\\Catalogo.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Catalogo', [], true)
+ 5 APPPATH\Controllers\Home.php(32): view('Catalogo')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->menuProductos()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 02:51:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 02:51:09 --> ErrorException: Undefined variable $categorias
+[Method: GET, Route: Catalogo]
+in APPPATH\Views\Catalogo.php on line 11.
+ 1 APPPATH\Views\Catalogo.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categorias', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\app\\Views\\Catalogo.php', 11)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyecto_aiello_herrera\\app\\Views\\Catalogo.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('Catalogo', [], true)
+ 5 APPPATH\Controllers\Home.php(32): view('Catalogo')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->menuProductos()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 02:51:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 02:51:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 02:51:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 02:52:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 02:52:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 02:52:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 02:52:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 02:52:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 02:52:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 02:53:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 02:53:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 02:53:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 02:56:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 02:58:56 --> ErrorException: finfo_file(C:\xampp\tmp\phpF1D1.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\phpF1D1.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\phpF1D1.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750301936_b6e9f118fc9ab31c2198.jpg', [], [...], null, 'img')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('img', 'img', '1750301936_b6e9f118fc9ab31c2198.jpg', [...], [...], 'img')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(95): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 02:59:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 02:59:04 --> ErrorException: finfo_file(C:\xampp\tmp\phpF8C.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\phpF8C.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\phpF8C.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750301944_614931c969d470f51863.jpg', [], [...], null, 'img')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('img', 'img', '1750301944_614931c969d470f51863.jpg', [...], [...], 'img')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(95): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 02:59:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 02:59:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 02:59:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 03:00:01 --> ErrorException: finfo_file(C:\xampp\tmp\phpEF3B.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\phpEF3B.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\phpEF3B.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750302001_d892c8eb2290f849b9e7.jpg', [], [...], null, 'img')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('img', 'img', '1750302001_d892c8eb2290f849b9e7.jpg', [...], [...], 'img')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(95): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 03:02:15 --> ErrorException: finfo_file(C:\xampp\tmp\phpF964.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\phpF964.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\phpF964.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750302135_85d5a1b299126b90abc2.jpg', [], [...], null, 'img')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('img', 'img', '1750302135_85d5a1b299126b90abc2.jpg', [...], [...], 'img')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(99): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 03:02:16 --> ErrorException: finfo_file(C:\xampp\tmp\phpFFAF.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\phpFFAF.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\phpFFAF.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750302136_04380e925f29600c8f50.jpg', [], [...], null, 'img')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('img', 'img', '1750302136_04380e925f29600c8f50.jpg', [...], [...], 'img')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(99): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 03:02:18 --> ErrorException: finfo_file(C:\xampp\tmp\php647.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\php647.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\php647.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750302138_a723c99e1b5218321c15.jpg', [], [...], null, 'img')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('img', 'img', '1750302138_a723c99e1b5218321c15.jpg', [...], [...], 'img')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(99): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 03:02:19 --> ErrorException: finfo_file(C:\xampp\tmp\phpAAD.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\phpAAD.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\phpAAD.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750302139_68ba65d1290f5fbde836.jpg', [], [...], null, 'img')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('img', 'img', '1750302139_68ba65d1290f5fbde836.jpg', [...], [...], 'img')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(99): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 03:02:22 --> ErrorException: finfo_file(C:\xampp\tmp\php1722.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\php1722.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\php1722.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750302142_6a03257e941366e2ff70.jpg', [], [...], null, 'img')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('img', 'img', '1750302142_6a03257e941366e2ff70.jpg', [...], [...], 'img')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(99): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 03:02:23 --> ErrorException: finfo_file(C:\xampp\tmp\php1A7E.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\php1A7E.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\php1A7E.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750302143_7d240334bf756aa070ca.jpg', [], [...], null, 'img')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('img', 'img', '1750302143_7d240334bf756aa070ca.jpg', [...], [...], 'img')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(99): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 03:02:24 --> ErrorException: finfo_file(C:\xampp\tmp\php1E28.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\php1E28.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\php1E28.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750302144_bb7dd84da3eaf767f36a.jpg', [], [...], null, 'img')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('img', 'img', '1750302144_bb7dd84da3eaf767f36a.jpg', [...], [...], 'img')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(99): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 03:02:25 --> ErrorException: finfo_file(C:\xampp\tmp\php21C3.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\php21C3.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\php21C3.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750302145_7e3abfc953d4ded38f98.jpg', [], [...], null, 'img')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('img', 'img', '1750302145_7e3abfc953d4ded38f98.jpg', [...], [...], 'img')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(99): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 03:02:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 03:02:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-19 03:02:51 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'baseaiello_herr...', 3306, '', 0)
+#1 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\proyecto_aiello_herrera\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyecto_aiello_herrera\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\proyecto_aiello_herrera\app\Controllers\Producto_controller.php(36): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\proyecto_aiello_herrera\system\CodeIgniter.php(933): App\Controllers\Producto_controller->create()
+#8 C:\xampp\htdocs\proyecto_aiello_herrera\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#9 C:\xampp\htdocs\proyecto_aiello_herrera\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\proyecto_aiello_herrera\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\proyecto_aiello_herrera\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\proyecto_aiello_herrera\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\proyecto_aiello_herrera\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\proyecto_aiello_herrera\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\proyecto_aiello_herrera\app\Controllers\Producto_controller.php(36): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\proyecto_aiello_herrera\system\CodeIgniter.php(933): App\Controllers\Producto_controller->create()
+#7 C:\xampp\htdocs\proyecto_aiello_herrera\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#8 C:\xampp\htdocs\proyecto_aiello_herrera\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyecto_aiello_herrera\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\proyecto_aiello_herrera\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\proyecto_aiello_herrera\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-06-19 03:02:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+[Method: GET, Route: producto/crear]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `categorias`
+WHERE `activo` = :activo:', [...], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Producto_controller.php(36): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 03:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 03:03:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 03:03:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 03:03:28 --> ErrorException: finfo_file(C:\xampp\tmp\php1708.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\php1708.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\php1708.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750302208_ea9a38f7858429122007.jpg', [], [...], null, 'img')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('img', 'img', '1750302208_ea9a38f7858429122007.jpg', [...], [...], 'img')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(99): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 03:05:10 --> ErrorException: finfo_file(C:\xampp\tmp\phpA700.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\phpA700.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\phpA700.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750302310_21a7922e88e5c0adcbb6.jpg', [], [...], null, 'img')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('img', 'img', '1750302310_21a7922e88e5c0adcbb6.jpg', [...], [...], 'img')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(77): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 03:05:11 --> ErrorException: finfo_file(C:\xampp\tmp\phpAA5C.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\phpAA5C.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\phpAA5C.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750302311_895c08885cd883effd95.jpg', [], [...], null, 'img')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('img', 'img', '1750302311_895c08885cd883effd95.jpg', [...], [...], 'img')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(77): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 03:05:12 --> ErrorException: finfo_file(C:\xampp\tmp\phpAD1C.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\phpAD1C.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\phpAD1C.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750302312_a8c86d7d08cb4571d44e.jpg', [], [...], null, 'img')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('img', 'img', '1750302312_a8c86d7d08cb4571d44e.jpg', [...], [...], 'img')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(77): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 03:08:36 --> ErrorException: finfo_file(C:\xampp\tmp\phpCC9D.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\phpCC9D.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\phpCC9D.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750302516_e124893c55fa04aac96e.jpg', [], [...], null, 'img')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('img', 'img', '1750302516_e124893c55fa04aac96e.jpg', [...], [...], 'img')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(79): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 03:08:37 --> ErrorException: finfo_file(C:\xampp\tmp\phpCFFA.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\phpCFFA.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\phpCFFA.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750302517_54445e94f9e725b89d0c.jpg', [], [...], null, 'img')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('img', 'img', '1750302517_54445e94f9e725b89d0c.jpg', [...], [...], 'img')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(79): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 03:08:38 --> ErrorException: finfo_file(C:\xampp\tmp\phpD29A.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\phpD29A.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\phpD29A.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750302518_5e9635cd6fe5f44a1a09.jpg', [], [...], null, 'img')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('img', 'img', '1750302518_5e9635cd6fe5f44a1a09.jpg', [...], [...], 'img')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(79): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 03:12:26 --> ParseError: syntax error, unexpected identifier "session", expecting "function" or "const"
+[Method: POST, Route: producto/guardar]
+in APPPATH\Controllers\Producto_controller.php on line 116.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\proyecto_aiello_herrera\\app\\Controllers\\Producto_controller.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Producto_controller')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Producto_controller')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Producto_controller', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 03:14:19 --> ErrorException: finfo_file(C:\xampp\tmp\php647.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\php647.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\php647.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750302859_f37967ee87a2c6dafc7a.jpg', [], [...], null, 'img')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('img', 'img', '1750302859_f37967ee87a2c6dafc7a.jpg', [...], [...], 'img')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(100): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 03:14:29 --> ErrorException: finfo_file(C:\xampp\tmp\php2F5B.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\php2F5B.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\php2F5B.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750302869_661f4f2e415c4ab4f396.jpg', [], [...], null, 'img')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('img', 'img', '1750302869_661f4f2e415c4ab4f396.jpg', [...], [...], 'img')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(100): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 03:14:30 --> ErrorException: finfo_file(C:\xampp\tmp\php3279.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\php3279.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\php3279.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750302870_3fb7650a9ee2def583a7.jpg', [], [...], null, 'img')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('img', 'img', '1750302870_3fb7650a9ee2def583a7.jpg', [...], [...], 'img')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(100): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 03:18:07 --> ErrorException: finfo_file(C:\xampp\tmp\php8261.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\php8261.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\php8261.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750303087_897c51822f844b0bc550.jpg', [], [...], null, 'img')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('img', 'img', '1750303087_897c51822f844b0bc550.jpg', [...], [...], 'img')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(128): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 03:18:10 --> ErrorException: finfo_file(C:\xampp\tmp\php8E77.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\php8E77.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\php8E77.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750303090_fa369f682968f542bacb.jpg', [], [...], null, 'img')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('img', 'img', '1750303090_fa369f682968f542bacb.jpg', [...], [...], 'img')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(128): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 03:18:11 --> ErrorException: finfo_file(C:\xampp\tmp\php9118.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\php9118.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\php9118.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750303091_eabbfa261dc3bf7f7dc2.jpg', [], [...], null, 'img')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('img', 'img', '1750303091_eabbfa261dc3bf7f7dc2.jpg', [...], [...], 'img')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(128): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 03:18:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 03:19:20 --> ErrorException: finfo_file(C:\xampp\tmp\php9FCA.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\php9FCA.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\php9FCA.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750303160_c530799260ef7b3311da.png', [], [...], null, 'img')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('img', 'img', '1750303160_c530799260ef7b3311da.png', [...], [...], 'img')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(128): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 03:34:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 03:34:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 03:35:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 03:41:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 03:42:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 03:42:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 03:43:07 --> ErrorException: finfo_file(C:\xampp\tmp\php256E.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\php256E.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\php256E.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750304587_a2c98598917e3e910337.png', [], [...], null, 'img')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('img', 'img', '1750304587_a2c98598917e3e910337.png', [...], [...], 'img')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(128): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 03:43:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 03:43:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 03:46:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 03:47:20 --> ErrorException: finfo_file(C:\xampp\tmp\php1E9.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\php1E9.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\php1E9.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750304840_e992dc2ce514aba79699.png', [], [...], null, 'img')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('img', 'img', '1750304840_e992dc2ce514aba79699.png', [...], [...], 'img')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(133): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 22:09:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 22:09:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 22:09:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 22:09:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 22:09:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 22:09:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-19 22:10:20 --> mysqli_sql_exception: Unknown column 'nombre' in 'field list' in C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_aiello_herrera\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_aiello_herrera\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_aiello_herrera\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\proyecto_aiello_herrera\system\BaseModel.php(750): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\proyecto_aiello_herrera\app\Controllers\Producto_controller.php(133): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\proyecto_aiello_herrera\system\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+#10 C:\xampp\htdocs\proyecto_aiello_herrera\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#11 C:\xampp\htdocs\proyecto_aiello_herrera\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\proyecto_aiello_herrera\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\proyecto_aiello_herrera\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\proyecto_aiello_herrera\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2025-06-19 22:10:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nombre' in 'field list'
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`nombre`, `descripcion`, `precio`, `precio_vta`, `descuento`, `id_categoria`, `cantidad`, `stock`, `stock_min`, `eliminado`, `img`, `activo`) VALUES (:nombre:, :descripcion:, :precio:, :precio_vta:, :descuento:, :id_categoria:, :cantidad:, :stock:, :stock_min:, :eliminado:, :img:, :activo:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Producto_controller.php(133): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 22:10:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `productos` (`nombre`, `descripcion`, `precio`, `precio_vta`, `descuento`, `id_categoria`, `cantidad`, `stock`, `stock_min`, `eliminado`, `img`, `activo`) VALUES (\'Cafetera\', \'ca\', \'20000\', 18000, \'2000\', \'1\', \'22\', \'22\', \'1\', 0, NULL, 1)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `productos` (`nombre`, `descripcion`, `precio`, `precio_vta`, `descuento`, `id_categoria`, `cantidad`, `stock`, `stock_min`, `eliminado`, `img`, `activo`) VALUES (\'Cafetera\', \'ca\', \'20000\', 18000, \'2000\', \'1\', \'22\', \'22\', \'1\', 0, NULL, 1)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`nombre`, `descripcion`, `precio`, `precio_vta`, `descuento`, `id_categoria`, `cantidad`, `stock`, `stock_min`, `eliminado`, `img`, `activo`) VALUES (:nombre:, :descripcion:, :precio:, :precio_vta:, :descuento:, :id_categoria:, :cantidad:, :stock:, :stock_min:, :eliminado:, :img:, :activo:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Producto_controller.php(133): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 22:10:20 --> [Caused by] mysqli_sql_exception: Unknown column 'nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `productos` (`nombre`, `descripcion`, `precio`, `precio_vta`, `descuento`, `id_categoria`, `cantidad`, `stock`, `stock_min`, `eliminado`, `img`, `activo`) VALUES (\'Cafetera\', \'ca\', \'20000\', 18000, \'2000\', \'1\', \'22\', \'22\', \'1\', 0, NULL, 1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `productos` (`nombre`, `descripcion`, `precio`, `precio_vta`, `descuento`, `id_categoria`, `cantidad`, `stock`, `stock_min`, `eliminado`, `img`, `activo`) VALUES (\'Cafetera\', \'ca\', \'20000\', 18000, \'2000\', \'1\', \'22\', \'22\', \'1\', 0, NULL, 1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `productos` (`nombre`, `descripcion`, `precio`, `precio_vta`, `descuento`, `id_categoria`, `cantidad`, `stock`, `stock_min`, `eliminado`, `img`, `activo`) VALUES (\'Cafetera\', \'ca\', \'20000\', 18000, \'2000\', \'1\', \'22\', \'22\', \'1\', 0, NULL, 1)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`nombre`, `descripcion`, `precio`, `precio_vta`, `descuento`, `id_categoria`, `cantidad`, `stock`, `stock_min`, `eliminado`, `img`, `activo`) VALUES (:nombre:, :descripcion:, :precio:, :precio_vta:, :descuento:, :id_categoria:, :cantidad:, :stock:, :stock_min:, :eliminado:, :img:, :activo:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Producto_controller.php(133): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 22:12:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 22:12:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 22:12:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 22:24:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 22:24:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 22:24:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 22:24:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 22:24:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-19 22:25:10 --> mysqli_sql_exception: Unknown column 'id_categoria' in 'field list' in C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_aiello_herrera\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_aiello_herrera\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_aiello_herrera\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\proyecto_aiello_herrera\system\BaseModel.php(750): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\proyecto_aiello_herrera\app\Controllers\Producto_controller.php(88): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\proyecto_aiello_herrera\system\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+#10 C:\xampp\htdocs\proyecto_aiello_herrera\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#11 C:\xampp\htdocs\proyecto_aiello_herrera\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\proyecto_aiello_herrera\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\proyecto_aiello_herrera\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\proyecto_aiello_herrera\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2025-06-19 22:25:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id_categoria' in 'field list'
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `id_categoria`, `stock`, `stock_min`, `img`, `eliminado`) VALUES (:nombre_prod:, :descripcion:, :precio:, :precio_vta:, :id_categoria:, :stock:, :stock_min:, :img:, :eliminado:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Producto_controller.php(88): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 22:25:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id_categoria' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `id_categoria`, `stock`, `stock_min`, `img`, `eliminado`) VALUES (\'Cafetera\', \'cafe\', \'20000\', \'25000\', \'1\', \'22\', \'1\', NULL, 0)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `id_categoria`, `stock`, `stock_min`, `img`, `eliminado`) VALUES (\'Cafetera\', \'cafe\', \'20000\', \'25000\', \'1\', \'22\', \'1\', NULL, 0)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `id_categoria`, `stock`, `stock_min`, `img`, `eliminado`) VALUES (:nombre_prod:, :descripcion:, :precio:, :precio_vta:, :id_categoria:, :stock:, :stock_min:, :img:, :eliminado:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Producto_controller.php(88): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 22:25:11 --> [Caused by] mysqli_sql_exception: Unknown column 'id_categoria' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `id_categoria`, `stock`, `stock_min`, `img`, `eliminado`) VALUES (\'Cafetera\', \'cafe\', \'20000\', \'25000\', \'1\', \'22\', \'1\', NULL, 0)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `id_categoria`, `stock`, `stock_min`, `img`, `eliminado`) VALUES (\'Cafetera\', \'cafe\', \'20000\', \'25000\', \'1\', \'22\', \'1\', NULL, 0)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `id_categoria`, `stock`, `stock_min`, `img`, `eliminado`) VALUES (\'Cafetera\', \'cafe\', \'20000\', \'25000\', \'1\', \'22\', \'1\', NULL, 0)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `id_categoria`, `stock`, `stock_min`, `img`, `eliminado`) VALUES (:nombre_prod:, :descripcion:, :precio:, :precio_vta:, :id_categoria:, :stock:, :stock_min:, :img:, :eliminado:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Producto_controller.php(88): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 22:28:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 22:28:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 22:29:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 22:34:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 22:34:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 22:34:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 22:34:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-19 22:34:52 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_aiello_herrera\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_aiello_herrera\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_aiello_herrera\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\proyecto_aiello_herrera\system\BaseModel.php(750): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\proyecto_aiello_herrera\app\Controllers\Producto_controller.php(88): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\proyecto_aiello_herrera\system\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+#10 C:\xampp\htdocs\proyecto_aiello_herrera\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#11 C:\xampp\htdocs\proyecto_aiello_herrera\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\proyecto_aiello_herrera\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\proyecto_aiello_herrera\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\proyecto_aiello_herrera\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2025-06-19 22:34:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'imagen' cannot be null
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `categoria_id`, `stock`, `stock_min`, `imagen`, `eliminado`) VALUES (:nombre_prod:, :descripcion:, :precio:, :precio_vta:, :categoria_id:, :stock:, :stock_min:, :imagen:, :eliminado:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Producto_controller.php(88): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 22:34:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'imagen' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `categoria_id`, `stock`, `stock_min`, `imagen`, `eliminado`) VALUES (\'Cafetera\', \'asereje\', \'200000\', \'2000000\', \'1\', \'22\', \'1\', NULL, 0)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `categoria_id`, `stock`, `stock_min`, `imagen`, `eliminado`) VALUES (\'Cafetera\', \'asereje\', \'200000\', \'2000000\', \'1\', \'22\', \'1\', NULL, 0)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `categoria_id`, `stock`, `stock_min`, `imagen`, `eliminado`) VALUES (:nombre_prod:, :descripcion:, :precio:, :precio_vta:, :categoria_id:, :stock:, :stock_min:, :imagen:, :eliminado:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Producto_controller.php(88): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 22:34:52 --> [Caused by] mysqli_sql_exception: Column 'imagen' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `categoria_id`, `stock`, `stock_min`, `imagen`, `eliminado`) VALUES (\'Cafetera\', \'asereje\', \'200000\', \'2000000\', \'1\', \'22\', \'1\', NULL, 0)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `categoria_id`, `stock`, `stock_min`, `imagen`, `eliminado`) VALUES (\'Cafetera\', \'asereje\', \'200000\', \'2000000\', \'1\', \'22\', \'1\', NULL, 0)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `categoria_id`, `stock`, `stock_min`, `imagen`, `eliminado`) VALUES (\'Cafetera\', \'asereje\', \'200000\', \'2000000\', \'1\', \'22\', \'1\', NULL, 0)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `categoria_id`, `stock`, `stock_min`, `imagen`, `eliminado`) VALUES (:nombre_prod:, :descripcion:, :precio:, :precio_vta:, :categoria_id:, :stock:, :stock_min:, :imagen:, :eliminado:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Producto_controller.php(88): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 22:34:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-19 22:35:05 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_aiello_herrera\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_aiello_herrera\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_aiello_herrera\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\proyecto_aiello_herrera\system\BaseModel.php(750): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\proyecto_aiello_herrera\app\Controllers\Producto_controller.php(88): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\proyecto_aiello_herrera\system\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+#10 C:\xampp\htdocs\proyecto_aiello_herrera\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#11 C:\xampp\htdocs\proyecto_aiello_herrera\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\proyecto_aiello_herrera\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\proyecto_aiello_herrera\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\proyecto_aiello_herrera\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2025-06-19 22:35:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'imagen' cannot be null
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `categoria_id`, `stock`, `stock_min`, `imagen`, `eliminado`) VALUES (:nombre_prod:, :descripcion:, :precio:, :precio_vta:, :categoria_id:, :stock:, :stock_min:, :imagen:, :eliminado:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Producto_controller.php(88): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 22:35:05 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'imagen' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `categoria_id`, `stock`, `stock_min`, `imagen`, `eliminado`) VALUES (\'Cafetera\', \'asereje\', \'200000\', \'2000000\', \'1\', \'22\', \'1\', NULL, 0)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `categoria_id`, `stock`, `stock_min`, `imagen`, `eliminado`) VALUES (\'Cafetera\', \'asereje\', \'200000\', \'2000000\', \'1\', \'22\', \'1\', NULL, 0)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `categoria_id`, `stock`, `stock_min`, `imagen`, `eliminado`) VALUES (:nombre_prod:, :descripcion:, :precio:, :precio_vta:, :categoria_id:, :stock:, :stock_min:, :imagen:, :eliminado:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Producto_controller.php(88): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 22:35:05 --> [Caused by] mysqli_sql_exception: Column 'imagen' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `categoria_id`, `stock`, `stock_min`, `imagen`, `eliminado`) VALUES (\'Cafetera\', \'asereje\', \'200000\', \'2000000\', \'1\', \'22\', \'1\', NULL, 0)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `categoria_id`, `stock`, `stock_min`, `imagen`, `eliminado`) VALUES (\'Cafetera\', \'asereje\', \'200000\', \'2000000\', \'1\', \'22\', \'1\', NULL, 0)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `categoria_id`, `stock`, `stock_min`, `imagen`, `eliminado`) VALUES (\'Cafetera\', \'asereje\', \'200000\', \'2000000\', \'1\', \'22\', \'1\', NULL, 0)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `categoria_id`, `stock`, `stock_min`, `imagen`, `eliminado`) VALUES (:nombre_prod:, :descripcion:, :precio:, :precio_vta:, :categoria_id:, :stock:, :stock_min:, :imagen:, :eliminado:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Producto_controller.php(88): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-19 22:35:20 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_aiello_herrera\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_aiello_herrera\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_aiello_herrera\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\proyecto_aiello_herrera\system\BaseModel.php(750): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\proyecto_aiello_herrera\app\Controllers\Producto_controller.php(88): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\proyecto_aiello_herrera\system\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+#10 C:\xampp\htdocs\proyecto_aiello_herrera\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#11 C:\xampp\htdocs\proyecto_aiello_herrera\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\proyecto_aiello_herrera\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\proyecto_aiello_herrera\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\proyecto_aiello_herrera\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2025-06-19 22:35:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'imagen' cannot be null
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `categoria_id`, `stock`, `stock_min`, `imagen`, `eliminado`) VALUES (:nombre_prod:, :descripcion:, :precio:, :precio_vta:, :categoria_id:, :stock:, :stock_min:, :imagen:, :eliminado:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Producto_controller.php(88): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 22:35:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'imagen' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `categoria_id`, `stock`, `stock_min`, `imagen`, `eliminado`) VALUES (\'Cafetera\', \'asereje\', \'200000\', \'2000000\', \'1\', \'22\', \'1\', NULL, 0)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `categoria_id`, `stock`, `stock_min`, `imagen`, `eliminado`) VALUES (\'Cafetera\', \'asereje\', \'200000\', \'2000000\', \'1\', \'22\', \'1\', NULL, 0)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `categoria_id`, `stock`, `stock_min`, `imagen`, `eliminado`) VALUES (:nombre_prod:, :descripcion:, :precio:, :precio_vta:, :categoria_id:, :stock:, :stock_min:, :imagen:, :eliminado:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Producto_controller.php(88): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 22:35:20 --> [Caused by] mysqli_sql_exception: Column 'imagen' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `categoria_id`, `stock`, `stock_min`, `imagen`, `eliminado`) VALUES (\'Cafetera\', \'asereje\', \'200000\', \'2000000\', \'1\', \'22\', \'1\', NULL, 0)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `categoria_id`, `stock`, `stock_min`, `imagen`, `eliminado`) VALUES (\'Cafetera\', \'asereje\', \'200000\', \'2000000\', \'1\', \'22\', \'1\', NULL, 0)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `categoria_id`, `stock`, `stock_min`, `imagen`, `eliminado`) VALUES (\'Cafetera\', \'asereje\', \'200000\', \'2000000\', \'1\', \'22\', \'1\', NULL, 0)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `categoria_id`, `stock`, `stock_min`, `imagen`, `eliminado`) VALUES (:nombre_prod:, :descripcion:, :precio:, :precio_vta:, :categoria_id:, :stock:, :stock_min:, :imagen:, :eliminado:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Producto_controller.php(88): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 22:36:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 22:36:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 22:36:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-19 22:36:28 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\proyecto_aiello_herrera\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\proyecto_aiello_herrera\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\proyecto_aiello_herrera\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\proyecto_aiello_herrera\system\BaseModel.php(750): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\proyecto_aiello_herrera\app\Controllers\Producto_controller.php(88): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\proyecto_aiello_herrera\system\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+#10 C:\xampp\htdocs\proyecto_aiello_herrera\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#11 C:\xampp\htdocs\proyecto_aiello_herrera\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\proyecto_aiello_herrera\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\proyecto_aiello_herrera\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\proyecto_aiello_herrera\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2025-06-19 22:36:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'imagen' cannot be null
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `categoria_id`, `stock`, `stock_min`, `imagen`, `eliminado`) VALUES (:nombre_prod:, :descripcion:, :precio:, :precio_vta:, :categoria_id:, :stock:, :stock_min:, :imagen:, :eliminado:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Producto_controller.php(88): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 22:36:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'imagen' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `categoria_id`, `stock`, `stock_min`, `imagen`, `eliminado`) VALUES (\'Cafetera\', \'asereje\', \'2000\', \'3000\', \'1\', \'3\', \'1\', NULL, 0)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `categoria_id`, `stock`, `stock_min`, `imagen`, `eliminado`) VALUES (\'Cafetera\', \'asereje\', \'2000\', \'3000\', \'1\', \'3\', \'1\', NULL, 0)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `categoria_id`, `stock`, `stock_min`, `imagen`, `eliminado`) VALUES (:nombre_prod:, :descripcion:, :precio:, :precio_vta:, :categoria_id:, :stock:, :stock_min:, :imagen:, :eliminado:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Producto_controller.php(88): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 22:36:28 --> [Caused by] mysqli_sql_exception: Column 'imagen' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `categoria_id`, `stock`, `stock_min`, `imagen`, `eliminado`) VALUES (\'Cafetera\', \'asereje\', \'2000\', \'3000\', \'1\', \'3\', \'1\', NULL, 0)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `categoria_id`, `stock`, `stock_min`, `imagen`, `eliminado`) VALUES (\'Cafetera\', \'asereje\', \'2000\', \'3000\', \'1\', \'3\', \'1\', NULL, 0)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `categoria_id`, `stock`, `stock_min`, `imagen`, `eliminado`) VALUES (\'Cafetera\', \'asereje\', \'2000\', \'3000\', \'1\', \'3\', \'1\', NULL, 0)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`nombre_prod`, `descripcion`, `precio`, `precio_vta`, `categoria_id`, `stock`, `stock_min`, `imagen`, `eliminado`) VALUES (:nombre_prod:, :descripcion:, :precio:, :precio_vta:, :categoria_id:, :stock:, :stock_min:, :imagen:, :eliminado:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Producto_controller.php(88): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 22:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 22:37:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 22:37:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 22:37:59 --> ErrorException: finfo_file(C:\xampp\tmp\php2754.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\php2754.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\php2754.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750372679_bd2e7883241282d522f3.png', [], [...], null, 'imagen')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('imagen', 'imagen', '1750372679_bd2e7883241282d522f3.png', [...], [...], 'imagen')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(88): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->formValidation()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 22:55:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 22:56:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 22:56:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 23:02:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 23:02:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 23:03:08 --> ErrorException: finfo_file(C:\xampp\tmp\php2CB1.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\php2CB1.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\php2CB1.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750374188_66c63066e6c6e471edce.png', [], [...], null, 'imagen')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('imagen', 'imagen', '1750374188_66c63066e6c6e471edce.png', [...], [...], 'imagen')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(88): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->guardar()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 23:03:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 23:03:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 23:09:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 23:10:25 --> ErrorException: finfo_file(C:\xampp\tmp\phpD806.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\phpD806.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\phpD806.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750374625_d8e9b7fffc4e265b28c6.png', [], [...], null, 'imagen')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('imagen', 'imagen', '1750374625_d8e9b7fffc4e265b28c6.png', [...], [...], 'imagen')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(88): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->guardar()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 23:10:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 23:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 23:10:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 23:10:59 --> ErrorException: finfo_file(C:\xampp\tmp\php5CD7.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\php5CD7.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\php5CD7.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750374659_85ae8e1fe7e1352e0dbe.png', [], [...], null, 'imagen')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('imagen', 'imagen', '1750374659_85ae8e1fe7e1352e0dbe.png', [...], [...], 'imagen')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(88): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->guardar()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 23:11:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 23:11:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-19 23:11:48 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'baseaiello_herr...', 3306, '', 0)
+#1 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\proyecto_aiello_herrera\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyecto_aiello_herrera\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\proyecto_aiello_herrera\app\Controllers\Producto_controller.php(34): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\proyecto_aiello_herrera\system\CodeIgniter.php(933): App\Controllers\Producto_controller->create()
+#8 C:\xampp\htdocs\proyecto_aiello_herrera\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#9 C:\xampp\htdocs\proyecto_aiello_herrera\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\proyecto_aiello_herrera\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\proyecto_aiello_herrera\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\proyecto_aiello_herrera\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\proyecto_aiello_herrera\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\proyecto_aiello_herrera\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\proyecto_aiello_herrera\app\Controllers\Producto_controller.php(34): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\proyecto_aiello_herrera\system\CodeIgniter.php(933): App\Controllers\Producto_controller->create()
+#7 C:\xampp\htdocs\proyecto_aiello_herrera\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#8 C:\xampp\htdocs\proyecto_aiello_herrera\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyecto_aiello_herrera\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\proyecto_aiello_herrera\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\proyecto_aiello_herrera\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-06-19 23:11:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+[Method: GET, Route: producto/crear]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `categorias`
+WHERE `activo` = :activo:', [...], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Producto_controller.php(34): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-19 23:11:55 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'baseaiello_herr...', 3306, '', 0)
+#1 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\proyecto_aiello_herrera\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyecto_aiello_herrera\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\proyecto_aiello_herrera\app\Controllers\Producto_controller.php(34): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\proyecto_aiello_herrera\system\CodeIgniter.php(933): App\Controllers\Producto_controller->create()
+#8 C:\xampp\htdocs\proyecto_aiello_herrera\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#9 C:\xampp\htdocs\proyecto_aiello_herrera\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\proyecto_aiello_herrera\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\proyecto_aiello_herrera\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\proyecto_aiello_herrera\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\proyecto_aiello_herrera\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\proyecto_aiello_herrera\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\proyecto_aiello_herrera\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\proyecto_aiello_herrera\app\Controllers\Producto_controller.php(34): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\proyecto_aiello_herrera\system\CodeIgniter.php(933): App\Controllers\Producto_controller->create()
+#7 C:\xampp\htdocs\proyecto_aiello_herrera\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#8 C:\xampp\htdocs\proyecto_aiello_herrera\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyecto_aiello_herrera\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\proyecto_aiello_herrera\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\proyecto_aiello_herrera\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-06-19 23:11:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+[Method: GET, Route: producto/crear]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `categorias`
+WHERE `activo` = :activo:', [...], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Producto_controller.php(34): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 23:12:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 23:12:22 --> ErrorException: finfo_file(C:\xampp\tmp\php9E9D.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\php9E9D.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\php9E9D.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750374742_69d5a3dbd5cc07e432a6.png', [], [...], null, 'imagen')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('imagen', 'imagen', '1750374742_69d5a3dbd5cc07e432a6.png', [...], [...], 'imagen')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(88): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->guardar()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 23:12:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 23:12:32 --> ErrorException: finfo_file(C:\xampp\tmp\phpC8BC.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\phpC8BC.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\phpC8BC.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750374752_47d1773aa1fccbb0f2aa.jpg', [], [...], null, 'imagen')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('imagen', 'imagen', '1750374752_47d1773aa1fccbb0f2aa.jpg', [...], [...], 'imagen')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(88): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->guardar()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 23:12:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 23:15:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 23:16:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 23:16:43 --> ErrorException: finfo_file(C:\xampp\tmp\phpEFD4.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\phpEFD4.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\phpEFD4.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750375003_05469e6cd637ff86fd6b.png', [], [...], null, 'imagen')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('imagen', 'imagen', '1750375003_05469e6cd637ff86fd6b.png', [...], [...], 'imagen')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(88): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->guardar()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 23:26:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 23:26:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 23:26:34 --> ErrorException: finfo_file(C:\xampp\tmp\phpF557.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\phpF557.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\phpF557.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750375594_29bd20d531e5151e33bf.png', [], [...], null, 'imagen')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('imagen', 'imagen', '1750375594_29bd20d531e5151e33bf.png', [...], [...], 'imagen')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(88): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->guardar()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 23:30:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 23:30:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 23:31:25 --> ErrorException: finfo_file(C:\xampp\tmp\php63CD.tmp): Failed to open stream: No such file or directory
+[Method: POST, Route: producto/guardar]
+in SYSTEMPATH\Files\File.php on line 137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\php63CD.tmp): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\proyecto_aiello_herrera\\system\\Files\\File.php', 137)
+ 2 SYSTEMPATH\Files\File.php(137): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\php63CD.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(318): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(305): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Validation\StrictRules\FileRules.php(148): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\FileRules->is_image('1750375885_91f9c5281f9d32545b51.png', [], [...], null, 'imagen')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('imagen', 'imagen', '1750375885_91f9c5281f9d32545b51.png', [...], [...], 'imagen')
+ 8 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(808): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+11 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+12 APPPATH\Controllers\Producto_controller.php(88): CodeIgniter\BaseModel->save([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Producto_controller->guardar()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

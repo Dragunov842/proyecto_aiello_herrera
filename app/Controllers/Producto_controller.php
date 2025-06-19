@@ -1,202 +1,222 @@
 <?php
 namespace App\Controllers;
-use App\Models\usuarios_model;
+
+use App\Models\productos_model;
+use App\Models\categorias_model;
 use CodeIgniter\Controller;
 
-class Usuario_controller extends Controller {
+class Producto_controller extends Controller
+{
+    protected $productoModel;
+    protected $categoriaModel;
 
-    public function __construct() {
+    public function __construct()
+    {
         helper(['form', 'url']);
+        $this->productoModel = new productos_model();
+        $this->categoriaModel = new categorias_model();
     }
 
-    // Mostrar formulario de registro
-    public function create() {
-        $dato['titulo'] = 'registrar';
-        echo view('Header', $dato);
+    public function index()
+    {
+        $data['productos'] = $this->productoModel->findAll();
+        $data['categorias'] = $this->categoriaModel->where('activo', 1)->findAll();
+        $data['titulo'] = 'Catálogo de Productos';
+
+        echo view('Header');
         echo view('Barradenavegacion');
-        echo view('Formulario_usuario');
+        echo view('Catalogo', $data);
         echo view('Footer');
     }
 
-    // Guardar nuevo usuario
-    public function formValidation() {
-        $input = $this->validate([
-            'nombre'     => 'required|min_length[3]',
-            'apellido'   => 'required|min_length[3]|max_length[25]',
-            'usuario'    => 'required|min_length[3]',
-            'email'      => 'required|min_length[4]|max_length[100]|valid_email|is_unique[usuarios.email]',
-            'contraseña' => 'required|min_length[3]|max_length[10]'
-        ]);
+    public function create()
+    {
+        $data['categorias'] = $this->categoriaModel->where('activo', 1)->findAll();
+        $data['titulo'] = 'Registrar Producto';
 
-        $formModel = new usuarios_model();
-
-        if (!$input) {
-            $data['titulo'] = 'registrar';
-            echo view('Header', $data);
-            echo view('Barradenavegacion');
-            echo view('Formulario_usuario', ['validation' => $this->validator]);
-            echo view('Footer');
-        } else {
-            $formModel->save([
-                'nombre'     => $this->request->getVar('nombre'),
-                'apellido'   => $this->request->getVar('apellido'),
-                'usuario'    => $this->request->getVar('usuario'),
-                'email'      => $this->request->getVar('email'),
-                'contraseña' => password_hash($this->request->getVar('contraseña'), PASSWORD_DEFAULT),
-                'perfil_id'  => $this->request->getVar('perfil_id'),
-                'eliminado'  => 'NO',
-            ]);
-
-            session()->setFlashdata('success', 'Usuario registrado con éxito');
-            return redirect()->route('productos');
-        }
-    }
-
-    // Mostrar formulario de login
-    public function login() {
-        $data = ["titulo" => "Leblanc - Iniciar Sesión"];
-        echo view("Header", $data);
-        echo view("Barradenavegacion");
-        echo view("Login");
-        echo view("Footer");
-    }
-
-    // Procesar login
-    public function inicioSesion() {
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            $critValidacion = $this->validate([
-                "usuario"    => "required",
-                "contraseña" => "required"
-            ], [
-                "usuario" => ["required" => 'Campo de usuario obligatorio'],
-                "contraseña" => ["required" => 'Campo de contraseña obligatorio']
-            ]);
-
-            if ($critValidacion) {
-                $userModel = new usuarios_model();
-                $datosUser = $userModel->where('usuario', $_POST['usuario'])->first();
-
-                if ($datosUser != null && password_verify($_POST['contraseña'], $datosUser['contraseña'])) {
-                    session()->set([
-                        'id'         => $datosUser['id_usuario'],
-                        'usuario'    => $datosUser['usuario'],
-                        'perfil_id'  => $datosUser['perfil_id'],
-                        'nombre'     => $datosUser['nombre'],
-                        'apellido'   => $datosUser['apellido'],
-                        'email'      => $datosUser['email'],
-                        'is_logged'  => true
-                    ]);
-                    return redirect()->to(base_url(''))->with('alertaExitosa', 'Inicio de sesión exitoso!');
-                } else {
-                    $datos['errores'] = "Usuario o contraseña incorrectos";
-                }
-            } else {
-                $datos["validation"] = $this->validator->getErrors();
-            }
-
-            $data = ["titulo" => "Leblanc - Iniciar Sesión"];
-            echo view("Header", $data);
-            echo view("Barradenavegacion");
-            echo view("Login", $datos ?? []);
-            echo view("Footer");
-        }
-    }
-
-    // Cerrar sesión
-    public function cerrarSesion() {
-        session()->destroy();
-        return redirect()->to(base_url('').'/');
-    }
-
-    // Mostrar todos los usuarios no eliminados
-    public function index() {
-        $modelo = new usuarios_model();
-        $data['usuarios'] = $modelo->where('eliminado', 'NO')->findAll();
-        $data['titulo'] = 'Listado de Usuarios';
         echo view('Header', $data);
         echo view('Barradenavegacion');
-        echo view('Crud_usuarios', $data);
+        echo view('Formulario_producto', $data);
         echo view('Footer');
     }
 
-    // Mostrar formulario de edición
-    public function editar($id) {
-        $modelo = new usuarios_model();
-        $data['usuario'] = $modelo->find($id);
+        public function guardar()
+    {
+        $rules = [
+            'nombre_prod'   => 'required|min_length[3]',
+            'descripcion'   => 'required|max_length[250]',
+            'precio'        => 'required|numeric',
+            'precio_vta'    => 'required|numeric',
+            'categoria_id'  => 'required|numeric',
+            'stock'         => 'required|integer',
+            'stock_min'     => 'required|integer',
+        ];
 
-        if (!$data['usuario']) {
-            throw new \CodeIgniter\Exceptions\PageNotFoundException('Usuario no encontrado');
-        }
-
-        $data['titulo'] = 'Editar Usuario';
-        echo view('Header', $data);
-        echo view('Barradenavegacion');
-        echo view('Formulario_usuario', $data);
-        echo view('Footer');
-    }
-
-    // Actualizar usuario
-    public function actualizar($id) {
-        $modelo = new usuarios_model();
-
-        $input = $this->validate([
-            'nombre'   => 'required|min_length[3]',
-            'apellido' => 'required|min_length[3]|max_length[25]',
-            'usuario'  => 'required|min_length[3]',
-            'email'    => 'required|min_length[4]|max_length[100]|valid_email'
-        ]);
-
-        if (!$input) {
+        if (!$this->validate($rules)) {
+            $data['titulo'] = 'Registrar Producto';
             $data['validation'] = $this->validator;
-            $data['usuario'] = $modelo->find($id);
-            $data['titulo'] = 'Editar Usuario';
+            $data['categorias'] = $this->categoriaModel->where('activo', 1)->findAll();
+
             echo view('Header', $data);
             echo view('Barradenavegacion');
-            echo view('Formulario_usuario', $data);
+            echo view('Formulario_producto', $data);
             echo view('Footer');
-        } else {
-            $datos = [
-                'nombre'    => $this->request->getVar('nombre'),
-                'apellido'  => $this->request->getVar('apellido'),
-                'usuario'   => $this->request->getVar('usuario'),
-                'email'     => $this->request->getVar('email'),
-                'perfil_id' => $this->request->getVar('perfil_id')
-            ];
+            return;
+        }
 
-            if ($this->request->getVar('contraseña')) {
-                $datos['contraseña'] = password_hash($this->request->getVar('contraseña'), PASSWORD_DEFAULT);
+        $imgFile = $this->request->getFile('imagen');
+        $imgName = null;
+
+        if ($imgFile && $imgFile->getError() !== UPLOAD_ERR_NO_FILE) {
+            if (!$imgFile->isValid()) {
+                return $this->imagenError('Error en la carga de la imagen.');
             }
 
-            $modelo->update($id, $datos);
-            session()->setFlashdata('success', 'Usuario actualizado correctamente');
-            return redirect()->to(base_url('usuarios'));
+            if ($imgFile->getSize() > 4 * 1024 * 1024) {
+                return $this->imagenError('La imagen supera el tamaño máximo permitido (4MB).');
+            }
+
+            $allowedTypes = ['image/jpeg', 'image/png', 'image/gif'];
+            if (!in_array($imgFile->getMimeType(), $allowedTypes)) {
+                return $this->imagenError('Tipo de archivo no permitido. Solo JPG, PNG y GIF.');
+            }
+
+            $imgName = $imgFile->getRandomName();
+            $imgFile->move(WRITEPATH . 'uploads/productos', $imgName);
         }
+
+        $this->productoModel->save([
+            'nombre_prod'   => $this->request->getVar('nombre_prod'),
+            'descripcion'   => $this->request->getVar('descripcion'),
+            'precio'        => $this->request->getVar('precio'),
+            'precio_vta'    => $this->request->getVar('precio_vta'),
+            'categoria_id'  => $this->request->getVar('categoria_id'),
+            'stock'         => $this->request->getVar('stock'),
+            'stock_min'     => $this->request->getVar('stock_min'),
+            'imagen'        => $imgName,
+            'eliminado'     => 0,
+        ]);
+
+        session()->setFlashdata('success', 'Producto registrado con éxito');
+        return redirect()->to('producto');
     }
 
-    // Eliminar usuario (lógico)
-    public function eliminar($id) {
-        $modelo = new usuarios_model();
-        $modelo->update($id, ['eliminado' => 'SI']);
-        session()->setFlashdata('success', 'Usuario eliminado correctamente');
-        return redirect()->to(base_url('usuarios'));
-    }
+    private function imagenError($mensaje)
+    {
+        $data['titulo'] = 'Registrar Producto';
+        $data['validation'] = \Config\Services::validation();
+        $data['validation']->setError('imagen', $mensaje);
+        $data['categorias'] = $this->categoriaModel->where('activo', 1)->findAll();
 
-    // Mostrar usuarios eliminados
-    public function eliminados() {
-        $modelo = new usuarios_model();
-        $data['usuarios'] = $modelo->where('eliminado', 'SI')->findAll();
-        $data['titulo'] = 'Usuarios Eliminados';
         echo view('Header', $data);
         echo view('Barradenavegacion');
-        echo view('Usuarios_eliminados', $data);
+        echo view('Formulario_producto', $data);
+        echo view('Footer');
+        return;
+    }
+
+    public function editar($id = null)
+    {
+        $producto = $this->productoModel->find($id);
+        if (!$producto) {
+            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound("Producto no encontrado: $id");
+        }
+
+        $data['producto'] = $producto;
+        $data['categorias'] = $this->categoriaModel->where('activo', 1)->findAll();
+        $data['titulo'] = 'Editar Producto';
+
+        echo view('Header', $data);
+        echo view('Barradenavegacion');
+        echo view('editarProducto', $data);
         echo view('Footer');
     }
 
-    // Reactivar usuario eliminado
-    public function activar($id) {
-        $modelo = new usuarios_model();
-        $modelo->update($id, ['eliminado' => 'NO']);
-        session()->setFlashdata('success', 'Usuario activado correctamente');
-        return redirect()->to(base_url('usuarios/eliminados'));
+    public function actualizar($id = null)
+    {
+        $rules = [
+            'nombre_prod'   => 'required|min_length[3]',
+            'descripcion'   => 'required|max_length[250]',
+            'precio'        => 'required|numeric',
+            'precio_vta'    => 'required|numeric',
+            'categoria_id'  => 'required|numeric',
+            'stock'         => 'required|integer',
+            'stock_min'     => 'required|integer',
+        ];
+
+        if (!$this->validate($rules)) {
+            return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
+        }
+
+        $producto = $this->productoModel->find($id);
+        if (!$producto) {
+            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound("Producto no encontrado: $id");
+        }
+
+        $imgFile = $this->request->getFile('imagen');
+        $imgName = $producto['imagen'];
+
+        if ($imgFile && $imgFile->getError() !== UPLOAD_ERR_NO_FILE) {
+            $imgRules = ['imagen' => 'is_image[imagen]|max_size[imagen,4096]'];
+            if (!$this->validate($imgRules)) {
+                return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
+            }
+
+            if ($imgFile->isValid() && !$imgFile->hasMoved()) {
+                $imgName = $imgFile->getRandomName();
+                $imgFile->move(WRITEPATH . 'uploads/productos', $imgName);
+            }
+        }
+
+        $this->productoModel->update($id, [
+            'nombre_prod'   => $this->request->getPost('nombre_prod'),
+            'descripcion'   => $this->request->getPost('descripcion'),
+            'precio'        => $this->request->getPost('precio'),
+            'precio_vta'    => $this->request->getPost('precio_vta'),
+            'categoria_id'  => $this->request->getPost('categoria_id'),
+            'stock'         => $this->request->getPost('stock'),
+            'stock_min'     => $this->request->getPost('stock_min'),
+            'imagen'        => $imgName,
+        ]);
+
+        session()->setFlashdata('success', 'Producto actualizado correctamente');
+        return redirect()->to('producto');
+    }
+
+    public function eliminar($id = null)
+    {
+        $producto = $this->productoModel->find($id);
+        if (!$producto) {
+            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound("Producto no encontrado: $id");
+        }
+
+        $this->productoModel->update($id, ['eliminado' => 1]);
+
+        session()->setFlashdata('success', 'Producto desactivado correctamente');
+        return redirect()->to('producto');
+    }
+
+    public function restaurar($id = null)
+    {
+        $producto = $this->productoModel->find($id);
+        if (!$producto) {
+            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound("Producto no encontrado: $id");
+        }
+
+        $this->productoModel->update($id, ['eliminado' => 0]);
+
+        session()->setFlashdata('success', 'Producto restaurado correctamente');
+        return redirect()->to('eliminados');
+    }
+
+    public function eliminados()
+    {
+        $data['productos'] = $this->productoModel->where('eliminado', 1)->findAll();
+        $data['titulo'] = 'Productos Eliminados';
+
+        echo view('Header', $data);
+        echo view('Barradenavegacion');
+        echo view('Productos_eliminados', $data);
+        echo view('Footer');
     }
 }

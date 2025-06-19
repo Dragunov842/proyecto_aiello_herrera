@@ -16,6 +16,7 @@ $perfil = $session->get('perfil_id');?>
                 
         </div>
             <a href="<?php echo base_url('Crud_usuarios');?>" class="nav-link">Crud usuarios</a>
+            <a href="<?php echo base_url('producto/crear');?>" class="nav-link">Agregar Producto</a>
             <a href="<?php echo base_url('listado-productos');?>" class="nav-link">Productos</a>
             <a href="<?php echo base_url('comercializacion');?>" class="nav-link">Comercializacion</a>
             <a href="<?php echo base_url('cerrarSesion')?>" class="nav-link"> Cerrar Sesion </a>

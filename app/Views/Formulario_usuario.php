@@ -65,7 +65,7 @@
                         </div>
 
                         <!-- Perfil (oculto o visible según necesidad) -->
-                        <input type="hidden" name="perfil_id" value="2">
+                        <input type="hidden" name="perfil_id" value="1">
 
                         <input type="hidden" name="baja" value="NO">
 
