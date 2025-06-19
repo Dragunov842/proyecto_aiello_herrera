@@ -24,5 +24,8 @@
                     <label for="exampleFormControlTextarea1" style="font-size: 20px; color:white;">Descripción</label>
                     <textarea class="form-control" id="miInput2" style="background-color: white; color: black;" placeholder="¿Cómo podemos ayudarte?" rows="3"></textarea>
                 </div>
-                <button class="btn btn-outline-success" type="button">Enviar</button> <button class="btn btn-danger" type="button">Eliminar</button>
+                <form action="<?= base_url('contactenos'); ?>">
+                                <button type="submit" id="send_form" class="btn btn-success">Enviar</button>
+                                <button type="reset" class="btn btn-danger">Cancelar</button>
+                </form>
             </section>           

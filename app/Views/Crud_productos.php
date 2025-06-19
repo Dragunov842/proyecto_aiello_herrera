@@ -40,7 +40,7 @@
                     <td>$<?= esc($prod['precio_vta']) ?></td>
                     <td><?= esc($prod['stock']) ?></td>
                     <td><?= esc($prod['stock_min']) ?></td>
-                    <td><?= esc($prod['eliminado'] === 'SI' ? 'Eliminado' : 'Activo') ?></td>
+                    <td><?= esc($prod['eliminado'] === 'SI' ? 'baja' : 'Activo') ?></td>
                     <td>
                         <a href="<?= base_url('producto/singleproducto/' . $prod['producto_id']) ?>" class="btn btn-warning btn-sm">Editar</a>
 

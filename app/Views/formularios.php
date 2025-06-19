@@ -1,26 +1,47 @@
-<body>
-<title>Editar Usuario</title>
-<div class="form-container">
-    <h2>Editar Usuario</h2>
-    <form method="post" action="<?= site_url('actualizarUsuarios'. $usuario['id_usuario'])?>">
-        <input type="hidden" name="id_usuario" value="<?= esc($usuario['id_usuario']) ?>">
 
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" id="nombre" value="<?= esc($usuario['nombre']) ?>" required>
+<h2 class="title" style="color:white; margin-top:100px;">Editar Usuario</h2>
+<div class="container mt-1 mb-0">
+    <div class="card" style="width: 50%;">
+        <div class="card-header text-center">
+            <h4>Modificación Usuarios</h4>
+        </div>
+        <form method="post" id="update_user" name="update_user" action="<?= site_url('actualizarUsuarios'. $usuario['id_usuario']); ?>">
+            <input type="hidden" name="id_usuario" id="id_usuario" value="<?= $usuario['id_usuario']; ?>">
 
-        <label for="apellido">Apellido:</label>
-        <input type="text" name="apellido" id="apellido" value="<?= esc($usuario['apellido']) ?>" required>
+            <div class="form-group">
+                <label>Nombre</label>
+                <input type="text" name="nombre" class="form-control" value="<?= $usuario['nombre']; ?>">
+            </div>
 
-        <label for="email">Correo Electrónico:</label>
-        <input type="text" name="correo" id="correo" value="<?= esc($usuario['email']) ?>" required>
-        
-        <label for="user">Usuario:</label>
-        <input type="text" name="usuario" id="usuario" value="<?= esc($usuario['usuario']) ?>" required>
+            <div class="form-group">
+                <label>Apellido</label>
+                <input type="text" name="apellido" class="form-control" value="<?= $usuario['apellido']; ?>">
+            </div>
 
-        <label for="id">Perfil_id:</label>
-        <input type="text" name="perfil_id" id="perfil_id" value="<?= esc($usuario['perfil_id']) ?>" required>
+            <div class="form-group">
+                <label>Usuario</label>
+                <input type="text" name="usuario" class="form-control" value="<?= $usuario['usuario']; ?>">
+            </div>
 
-        <button type="submit" class="btn">Guardar Cambios</button>
-    </form>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="email" class="form-control" value="<?= $usuario['email']; ?>">
+            </div>
+
+            <div class="form-group">
+                <label>Perfil_id</label>
+                <input type="text" name="perfil" class="form-control" value="<?= $usuario['perfil_id']; ?>" autofocus>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="guardar" class="btn btn-success">
+                <input type="reset" value="cancelar" class="btn btn-danger">
+                <a href="<?= base_url('Crud_usuarios') ?>" class="btn btn-secondary">volver</a>
+            </div>
+        </form>
+    </div>
 </div>
-</body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/additional-methods.min.js"></script>

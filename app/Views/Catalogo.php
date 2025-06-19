@@ -3,7 +3,7 @@
     <h2 class="text-center mb-4"><?= esc($titulo) ?></h2>
 
     <!-- Filtro por categoría -->
-    <form method="post" action="<?= base_url('listado-productos/filtrar') ?>">
+    <form method="post" action="<?= base_url('listado-productosfiltrados') ?>">
         <div class="row mb-4">
             <div class="col-md-4 offset-md-4">
                 <select name="categoria_id" class="form-select" onchange="this.form.submit()">

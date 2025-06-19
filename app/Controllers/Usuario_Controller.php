@@ -120,16 +120,16 @@ class Usuario_controller extends Controller {
     }
 
     // Mostrar formulario de edición
-    public function editar($id) {
+    public function editar($id = null) {
         $modelo = new usuarios_model();
-        $data['usuario'] = $modelo->find($id);
+        $data['usuario'] = $modelo->where('id_usuario', $id)->first();
 
         if (!$data['usuario']) {
             throw new \CodeIgniter\Exceptions\PageNotFoundException('Usuario no encontrado');
         }
 
-        $data['titulo'] = 'Editar Usuario';
-        echo view("Header", $data);
+        $dato['titulo'] = 'Editar Usuario';
+        echo view("Header", $dato);
         echo view("Barradenavegacion");
         echo view("formularios", $data);
         echo view("Footer");
@@ -138,17 +138,14 @@ class Usuario_controller extends Controller {
     // Actualizar usuario
     public function actualizar($id) {
         $modelo = new usuarios_model();
-            $datos = [
-                'nombre'    => $this->request->getPost('nombre'),
-                'apellido'  => $this->request->getPost('apellido'),
-                'usuario'   => $this->request->getPost('usuario'),
-                'email'     => $this->request->getPost('email'),
-                'perfil_id' => $this->request->getPost('perfil_id'),
-            ];
 
-            if ($this->request->getVar('contraseña')) {
-                $datos['contraseña'] = password_hash($this->request->getVar('contraseña'), PASSWORD_DEFAULT);
-            }
+            $datos = [
+                'nombre'    => $this->request->getVar('nombre'),
+                'apellido'  => $this->request->getVar('apellido'),
+                'usuario'   => $this->request->getVar('usuario'),
+                'email'     => $this->request->getVar('email'),
+                'perfil_id' => $this->request->getVar('perfil'),
+            ];
 
             $modelo->update($id, $datos);
             session()->setFlashdata('success', 'Usuario actualizado correctamente');

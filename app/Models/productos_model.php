@@ -5,59 +5,61 @@ use CodeIgniter\Model;
 
 class productos_model extends Model{
     protected $table            = 'productos';
-    protected $primaryKey       = 'producto_id';
-    protected $allowedFields    = ['nombre', 'descripcion', 'precio', 'descuento','id_categoria', 'cantidad', "img", "activo"];
+    protected $primaryKey       = 'id';
+    protected $allowedFields    = ['nombre_prod', 'imagen','categoria_id','precio','precio_vta','stock', "stock_min", "eliminado"
+];
 
     protected $validationRules  = [
 
-        "nombre"         => "required|min_length[3]",
-        "descripcion"    => "required|max_length[250]",
-        "precio"         => "required",
-        "descuento"      => "required",
-        "id_categoria"             => "required",
-        "cantidad"       => "required",
-        "img"            => "is_image[pd_Imagen]",
+        'nombre_prod'    => 'required|min_length[3]',
+        'imagen'         => 'uploaded[imagen]|is_image[imagen]|max_size[imagen,2048]',
+        'categoria_id'   => 'required',
+        'precio'         => 'required|numeric',
+        'precio_vta'     => 'required|numeric',
+        'stock'          => 'required',
+        'stock_min'      => 'required',
     ]; 
 
     protected $validationMessages = [
 
-        "nombre"         => [
-            "required"      => 'Campo de nombre del producto es obligatorio',
-            "min_length"    => 'El campo nombre del producto debe tener al menos 3 caracteres'
+        'nombre_prod'       => [
+            'required'      => 'Campo de nombre del producto es obligatorio',
+            'min_length'    => 'El campo nombre del producto debe tener al menos 3 caracteres'
         ],
-        "descripcion"    => [
-            "required"      => 'Campo de descripción es obligatorio',
-            "max_length"    => 'El campo descripción debe tener como máximo 250 caracteres'
+        'imagen'           => [
+            'is_image'      => 'Se debe ingresar una imagen jpg/png',
+            'max_size'      => 'El máximo tamaño es de 4096'
         ],
-        "precio"         => [
-            "required"      => 'Campo de precio es obligatorio',
+        'categoria_id'     =>[
+            'required'     => 'Campo de categoria es obligatorio'
         ],
-        "descuento"      => [
-            "required"      => 'Campo de categoria es obligatorio',
+        'precio'         => [
+            'required'      => 'Campo de precio es obligatorio',
+            'numeric'       => 'el valor ingresado debe ser numerico'
         ],
-        "id_categoria"             => [
-            "required"      => 'Campo de categoria es obligatorio',
+        'precio_vta'        => [
+            'required'      => 'Campo de precio de venta es obligatorio',
+            'numeric'       => 'el valor ingresado debe ser numerico'
         ],
-        "cantidad"       => [
-            "required"      => 'El campo de cantidad es obligatorio',
+        'stock'             => [
+            'required'      => 'Campo de stock es obligatorio',
         ],
-        "img"            => [
-            "is_image"      => 'Se debe ingresar una imagen jpg/png',
-            "max_size"      => 'El máximo tamaño es de 4096'
-        ]
+        'stock_min'       => [
+            'required'      => 'El campo de stock minimo es obligatorio',
+        ],
     ];
 
     public function desvalidarImagen(){
         unset($this->validationRules["pd_img"]);
     }
 
-    public function getAllProductosByCategoria($categoria){
+    public function getAllProductos($categoria){
         return $this->where('ct_id', $categoria)->findAll();
     }
 
     public function buscarProductos($buscar = null) {
         $sql = "SELECT p.*, c.ct_nombre FROM productos p
-                    INNER JOIN categoria c ON p.ct_id = c.id"; 
+                    INNER JOIN categoria c ON p.id = c.id"; 
         
         if ($buscar)
         {
@@ -68,10 +70,8 @@ class productos_model extends Model{
         return $query->getResultArray();
     }
 
-    public function obtenerProductosActivos() {
-        $sql = "SELECT p.*, c.ct_nombre FROM productos p
-                    INNER JOIN categoria c ON p.ct_id = c.id 
-                    WHERE pd_activo IS NULL";
+    public function getProductos() {
+        $sql = "SELECT p.* FROM productos p";
         
         $query = $this->db->query($sql);
         return $query->getResultArray();

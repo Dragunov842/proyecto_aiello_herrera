@@ -26,7 +26,7 @@
                         <form class="form-outline mt-2" id="miInput">
                             <input class="form-control" type="text" placeholder="Correo Electronico" aria-label="text">
                         </form>
-                        <button class="btn btn-primary" type="button">Suscribirse!</button>
+                        <button class="btn btn-primary" type="submit">Suscribirse!</button>
                     </div>
   </div>
 

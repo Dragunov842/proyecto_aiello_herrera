@@ -15,9 +15,11 @@ $perfil = $session->get('perfil_id');?>
                 <a href="">Usuario: <?php echo session('nombre'); ?></a>
                 
         </div>
+        <a href="<?php echo base_url('nueva-categoria');?>" class="nav-link">Categorias</a>
+            <a href="<?php echo base_url('Crud_productos');?>" class="nav-link">Crud Productos</a>
             <a href="<?php echo base_url('Crud_usuarios');?>" class="nav-link">Crud usuarios</a>
             <a href="<?php echo base_url('listado-productos');?>" class="nav-link">Productos</a>
-            <a href="<?php echo base_url('comercializacion');?>" class="nav-link">Comercializacion</a>
+            <a href="<?php echo base_url('crearProducto');?>" class="nav-link">Comercializacion</a>
             <a href="<?php echo base_url('cerrarSesion')?>" class="nav-link"> Cerrar Sesion </a>
 
         <?php elseif($perfil == 2):?>

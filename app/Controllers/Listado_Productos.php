@@ -35,12 +35,12 @@ class Listado_Productos extends Controller
         $id_categoria = $this->request->getPost("categoria_id");
 
         if($id_categoria == ""){
-            $datosProductos['productos'] = $this->productos->findAll();
-            $datosProductos['categorias'] = $this->categorias->findAll();
+            $datosProductos['productos'] = $this->productos->getProductos();
+            $datosProductos['categorias'] = $this->categorias->getCategorias();
             $datosProductos['titulo'] = "Producto";
         }else{
-            $datosProductos['productos'] = $this->productos->like("categoria_id", $id_categoria)->findAll();
-            $datosProductos['categorias'] = $this->categorias->findAll();
+            $datosProductos['productos'] = $this->productos->like("categoria_id", $id_categoria)->getProductos();
+            $datosProductos['categorias'] = $this->categorias->getCategorias();
             $datosProductos['titulo'] = "Producto";
         }  
 
@@ -56,7 +56,7 @@ class Listado_Productos extends Controller
             'titulo' => "Leblanc Cafeteria"
         ];
         $data = array_merge($defaultData, $data);
-
+        echo view("Header");
         echo view("Barradenavegacion");
         echo $mainContent;
         echo view("Footer");
