@@ -30,7 +30,7 @@ class categorias_model extends Model
     }*/
     public function getCategorias()
 {
-    return $this->where('activo', 1)->findAll();
+    return $this->findAll();
 }
 
 }

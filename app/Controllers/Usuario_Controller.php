@@ -139,13 +139,13 @@ class Usuario_controller extends Controller {
     public function actualizar($id) {
         $modelo = new usuarios_model();
 
-            $datos = [
-                'nombre'    => $this->request->getVar('nombre'),
-                'apellido'  => $this->request->getVar('apellido'),
-                'usuario'   => $this->request->getVar('usuario'),
-                'email'     => $this->request->getVar('email'),
-                'perfil_id' => $this->request->getVar('perfil'),
-            ];
+            $datos = ([
+                'nombre'    => $this->request->getPost('nombre'),
+                'apellido'  => $this->request->getPost('apellido'),
+                'usuario'   => $this->request->getPost('usuario'),
+                'email'     => $this->request->getPost('email'),
+                'perfil_id' => $this->request->getPost('perfil'),
+            ]);
 
             $modelo->update($id, $datos);
             session()->setFlashdata('success', 'Usuario actualizado correctamente');

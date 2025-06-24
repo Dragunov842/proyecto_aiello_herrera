@@ -1,5 +1,5 @@
 <div class="container mt-5">
-    <h2>Registrar nueva categoría</h2>
+    <h2 class="title" style="color:white; margin-top:100px;">Registrar nueva categoría</h2>
 
     <?php if(session()->getFlashdata('success')): ?>
         <div class="alert alert-success">

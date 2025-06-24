@@ -15,6 +15,7 @@ class Categoria_controller extends Controller
     {
         // Muestra el formulario
         echo view('Header');
+        echo view('Barradenavegacion');
         echo view('Formulario_categoria');
         echo view('Footer');
     }

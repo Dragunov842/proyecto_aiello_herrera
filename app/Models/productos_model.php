@@ -1,59 +1,50 @@
-<?php 
+<?php
+
 namespace App\Models;
 
 use CodeIgniter\Model;
 
-class productos_model extends Model{
-    protected $table            = 'productos';
-    protected $primaryKey       = 'id';
-    protected $allowedFields    = ['nombre_prod', 'imagen','categoria_id','precio','precio_vta','stock', "stock_min", "eliminado"
-];
+class productos_model extends Model
+{
+    protected $table = 'productos';
+    protected $primaryKey = 'id';
 
-    protected $validationRules  = [
-
-        'nombre_prod'    => 'required|min_length[3]',
-        'imagen'         => 'uploaded[imagen]|is_image[imagen]|max_size[imagen,2048]',
-        'categoria_id'   => 'required',
-        'precio'         => 'required|numeric',
-        'precio_vta'     => 'required|numeric',
-        'stock'          => 'required',
-        'stock_min'      => 'required',
-    ]; 
-
-    protected $validationMessages = [
-
-        'nombre_prod'       => [
-            'required'      => 'Campo de nombre del producto es obligatorio',
-            'min_length'    => 'El campo nombre del producto debe tener al menos 3 caracteres'
-        ],
-        'imagen'           => [
-            'is_image'      => 'Se debe ingresar una imagen jpg/png',
-            'max_size'      => 'El máximo tamaño es de 4096'
-        ],
-        'categoria_id'     =>[
-            'required'     => 'Campo de categoria es obligatorio'
-        ],
-        'precio'         => [
-            'required'      => 'Campo de precio es obligatorio',
-            'numeric'       => 'el valor ingresado debe ser numerico'
-        ],
-        'precio_vta'        => [
-            'required'      => 'Campo de precio de venta es obligatorio',
-            'numeric'       => 'el valor ingresado debe ser numerico'
-        ],
-        'stock'             => [
-            'required'      => 'Campo de stock es obligatorio',
-        ],
-        'stock_min'       => [
-            'required'      => 'El campo de stock minimo es obligatorio',
-        ],
+    protected $allowedFields = [
+        'nombre_prod',
+        'categoria_id',
+        'precio',
+        'precio_vta',
+        'stock',
+        'stock_min',
+        'eliminado',
+        'imagen',
     ];
 
-    public function desvalidarImagen(){
-        unset($this->validationRules["pd_img"]);
-    }
+    protected $returnType = 'array';
+    protected $useTimestamps = false;
 
-    public function getAllProductos($categoria){
+    protected $validationRules = [
+        'nombre_prod' => 'required|min_length[3]',
+        'categoria_id' => 'required|integer|greater_than[0]',
+        'precio' => 'required|numeric',
+        'precio_vta' => 'required|numeric',
+        'stock' => 'required|integer',
+        'stock_min' => 'required|integer',
+        'imagen' => 'uploaded[imagen]|is_image[imagen]|mime_in[imagen,image/jpg,image/jpeg,image/png]',
+    ];
+public function getBuilderProductos(){
+
+    $db = \config\Database::connect();
+
+    $builder = $db->table('productos');
+
+    $builder->select('*');
+    $builder->join('categorias', 'categorias.id = productos.categoria_id');
+
+    return $builder;
+}
+
+public function getAllProductos($categoria){
         return $this->where('ct_id', $categoria)->findAll();
     }
 
@@ -71,9 +62,19 @@ class productos_model extends Model{
     }
 
     public function getProductos() {
-        $sql = "SELECT p.* FROM productos p";
-        
-        $query = $this->db->query($sql);
-        return $query->getResultArray();
+        return $this->findAll();
+    }
+
+    public function getProducto($id = null){
+        $builder = $this->getBuilderProductos();
+        $builder->where('productos.id', $id);
+        $query= $builder->get();
+        return $query->getRowArray();
+    }
+    public function updateStock($id = null, $stock_actual = null){
+        $builder = $this->getBuilderProductos();
+        $builder->where('productos.id', $id);
+        $builder->set('productos.stock', $stock_actual);
+        $builder->update();
     }
 }

@@ -2,7 +2,7 @@
     <div class="card" style="width:75%;">
         <div class="card-header text-center">
 
-            <h2>Alta de productos</h2>
+            <h2 class="title" style="color:red;">Alta de productos</h2>
         </div>
 
 <?php if (!empty(session()->getFlashData('fail'))): ?>
@@ -30,8 +30,8 @@
                     <select class="form-control" name="categoria_id" id="categoria_id">
                         <option value="0"> Seleccionar categoria </option>
                         <?php foreach ($categorias as $categoria): ?>
-                            <option value="<?= $categoria['id']; ?>"<?= set_select('categoria_id', $categoria['id']); ?>>
-                                <?=$categoria['id'], ". ", $categoria['descripcion']; ?>
+                            <option value="<?= $categoria['id']; ?>">
+                                <?= $categoria['id'], ". ", $categoria['descripcion']; ?>
                             </option>
                         <?php endforeach; ?>
                     </select>
@@ -81,7 +81,7 @@
                                     </div>
                                    <div class="mb-2">
                                         <label for="imagen" class="form-label">Imagen</label>
-                                        <input class="form-control" type="file" name="imagen" id="imagen" accept="image/png, image/jpg, image/jpeg">
+                                        <input class="form-control" type="file" name="imagen" id="imagen" accept="image/png, image/jpg, image/jpeg" required>
                                         <?php if($validation->getError('imagen')): ?>
                                             <div class="alert alert-danger mt-2">
                                             <?= $validation->getError('imagen'); ?>

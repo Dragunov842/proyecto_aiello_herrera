@@ -20,7 +20,7 @@ $routes->post('enviar-form', 'Usuario_controller::formValidation');
 $routes->get('nueva-categoria', 'Categoria_controller::nueva');
 $routes->post('guardar-categoria', 'Categoria_controller::guardar');
 $routes->get('crearProducto', 'Producto_controller::crearProducto');
-$routes->post('guardarProd', 'Producto_controller::Store');
+$routes->post('guardarProd', 'Producto_controller::guardarProd');
 $routes->get('login', 'Usuario_controller::login');           
 $routes->post('iniciarSesion', 'Usuario_controller::inicioSesion'); 
 $routes->get('cerrarSesion', 'Usuario_controller::cerrarSesion'); 

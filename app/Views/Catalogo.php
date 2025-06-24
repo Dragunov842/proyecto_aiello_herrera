@@ -1,6 +1,6 @@
 <!-- app/Views/front/Catalogo/Catalogo_view.php -->
 <div class="container mt-4">
-    <h2 class="text-center mb-4"><?= esc($titulo) ?></h2>
+<h2 class="title" style="color:white; margin-top:100px;"><?= esc($titulo) ?></h2>
 
     <!-- Filtro por categoría -->
     <form method="post" action="<?= base_url('listado-productosfiltrados') ?>">

@@ -1,5 +1,5 @@
 <div class="container mt-4">
-    <h2><?= esc($titulo) ?></h2>
+    <h2 class="title" style="color:white; margin-top:100px;"><?= esc($titulo) ?></h2>
 
     <?php if (session()->getFlashdata('success')): ?>
         <div class="alert alert-success">
@@ -30,7 +30,7 @@
                     <td><?= esc($prod['nombre_prod']) ?></td>
                     <td>
                         <?php if (!empty($prod['imagen'])): ?>
-                            <img src="<?= base_url('uploads/productos/' . $prod['imagen']) ?>" width="60" alt="Imagen producto">
+                            <img src="<?= base_url('assets/uploads' . $prod['imagen']) ?>" width="60" alt="Imagen producto">
                         <?php else: ?>
                             Sin imagen
                         <?php endif; ?>
