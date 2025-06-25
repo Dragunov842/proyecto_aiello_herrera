@@ -20,7 +20,7 @@ class Listado_Productos extends Controller
     // Se listan los productos registrados/guardados en la base de datos
     public function listarProductos()
     {
-        $datosProductos['productos'] = $this->productos->findAll();
+        $datosProductos['productos'] = $this->productos->obtenerProductosActivos();
         $datosProductos['categorias'] = $this->categorias->findAll();
         $datosProductos['titulo'] = "Producto";
 
@@ -35,11 +35,11 @@ class Listado_Productos extends Controller
         $id_categoria = $this->request->getPost("categoria_id");
 
         if($id_categoria == ""){
-            $datosProductos['productos'] = $this->productos->getProductos();
+            $datosProductos['productos'] = $this->productos->obtenerProductosActivos();
             $datosProductos['categorias'] = $this->categorias->getCategorias();
             $datosProductos['titulo'] = "Producto";
         }else{
-            $datosProductos['productos'] = $this->productos->like("categoria_id", $id_categoria)->getProductos();
+            $datosProductos['productos'] = $this->productos->like("categoria_id", $id_categoria)->obtenerProductosActivos();
             $datosProductos['categorias'] = $this->categorias->getCategorias();
             $datosProductos['titulo'] = "Producto";
         }  

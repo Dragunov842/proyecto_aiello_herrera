@@ -26,7 +26,7 @@
                         <td><?= esc($prod['stock']) ?></td>
                         <td><?= esc($prod['stock_min']) ?></td>
                         <td>
-                            <a href="<?= site_url('activarproducto/' . $prod['id']) ?>" class="btn btn-success btn-sm">
+                            <a href="<?= site_url('activarProducto/' . $prod['id']) ?>" class="btn btn-success btn-sm">
                                 Restaurar
                             </a>
                         </td>

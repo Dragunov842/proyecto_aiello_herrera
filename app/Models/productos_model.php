@@ -77,4 +77,8 @@ public function getAllProductos($categoria){
         $builder->set('productos.stock', $stock_actual);
         $builder->update();
     }
+    public function obtenerProductosActivos()
+    {
+        return $this->where('eliminado', 'NO')->findAll();
+    }
 }

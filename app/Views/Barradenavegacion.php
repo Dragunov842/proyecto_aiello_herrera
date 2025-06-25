@@ -2,36 +2,41 @@
 $session = session();
 $nombre = $session->get('nombre');
 $perfil = $session->get('perfil_id');?>
-<nav class="navbar">
-        <?php if($perfil == 0):?>
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" 
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <a href="<?php echo base_url('login');?>" class="nav-link">Productos</a>
-        <a href="<?php echo base_url('comercializacion');?>" class="nav-link">Comercializacion</a>
-        <a href="<?php echo base_url('registrar')?>" class="nav-link"> Registrarse</a>
-        <a href="<?php echo base_url('login')?>" class="nav-link"> iniciar sesion</a>
+        <!-- Contenido colapsable -->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <?php if ($perfil == 0): ?>
+                    <li class="nav-item"><a class="nav-link" href="<?= base_url('login'); ?>">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?= base_url('comercializacion'); ?>">Comercialización</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?= base_url('registrar'); ?>">Registrarse</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?= base_url('login'); ?>">Iniciar sesión</a></li>
 
-        <?php elseif($perfil == 1):?>
-            <div class="nav-link">
-                <a href="">Usuario: <?php echo session('nombre'); ?></a>
-                
+                <?php elseif ($perfil == 1): ?>
+                    <li class="nav-item"><a class="nav-link disabled">Usuario: <?= esc($nombre); ?></a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?= base_url('nueva-categoria'); ?>">Categorías</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?= base_url('Crud_productos'); ?>">CRUD Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?= base_url('Crud_usuarios'); ?>">CRUD Usuarios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?= base_url('listado-productos'); ?>">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?= base_url('crearProducto'); ?>">Comercialización</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger" href="<?= base_url('cerrarSesion'); ?>">Cerrar sesión</a></li>
+
+                <?php elseif ($perfil == 2): ?>
+                    <li class="nav-item"><a class="nav-link disabled">Cliente: <?= esc($nombre); ?></a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?= base_url('listado-productos'); ?>">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?= base_url('comercializacion'); ?>">Comercialización</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger" href="<?= base_url('cerrarSesion'); ?>">Cerrar sesión</a></li>
+                <?php endif; ?>
+            </ul>
         </div>
-        <a href="<?php echo base_url('nueva-categoria');?>" class="nav-link">Categorias</a>
-            <a href="<?php echo base_url('Crud_productos');?>" class="nav-link">Crud Productos</a>
-            <a href="<?php echo base_url('Crud_usuarios');?>" class="nav-link">Crud usuarios</a>
-            <a href="<?php echo base_url('listado-productos');?>" class="nav-link">Productos</a>
-            <a href="<?php echo base_url('crearProducto');?>" class="nav-link">Comercializacion</a>
-            <a href="<?php echo base_url('cerrarSesion')?>" class="nav-link"> Cerrar Sesion </a>
-
-        <?php elseif($perfil == 2):?>
-            <div class="nav-link">
-                <a href="">Cliente: <?php echo session('nombre'); ?> </a>
-        </div>
-        
-        <a href="<?php echo base_url('listado-productos');?>" class="nav-link">Productos</a>
-        <a href="<?php echo base_url('comercializacion');?>" class="nav-link">Comercializacion</a>
-        <a href="<?php echo base_url('cerrarSesion')?>" class="nav-link"> Cerrar Sesion </a>
-        <?php endif; ?>
-    </nav>
+    </div>
+</nav>
 </header>
 </head>
 <body>

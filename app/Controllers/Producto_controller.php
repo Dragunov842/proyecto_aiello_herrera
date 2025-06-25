@@ -17,7 +17,7 @@ class Producto_controller extends Controller {
     {
         $productoModel = new productos_model();
         //realizo la consulta para mostrar todos los productos
-        $data['producto'] = $productoModel->getProductos(); //funcion en el modelo
+        $data['productos'] = $productoModel->getProductos(); //funcion en el modelo
 
         $dato['titulo'] = 'Crud_productos';
         echo view("Header", $dato);
@@ -43,6 +43,9 @@ class Producto_controller extends Controller {
     }
     public function guardarProd()
     {
+        $productoModel = new productos_model();
+        $imagen = $this->request->getFile('imagen');
+
         $input = $this->validate([
             'nombre_prod'=> 'required|min_length[3]',
             'categoria_id'=>'is_not_unique[categorias.id]',
@@ -53,7 +56,7 @@ class Producto_controller extends Controller {
             'imagen'=>'uploaded[imagen]|is_image[imagen]|max_size[imagen,4096]',
         ]);
 
-        $productoModel = new productos_model();
+        
         if(!$input){
             $categoriaModel = new categorias_model();
             $data['categorias'] = $categoriaModel->getCategorias();
@@ -69,13 +72,13 @@ class Producto_controller extends Controller {
         if (!$this->validate($productoModel->getValidationRules())) {
             return redirect()->back()->withInput()->with('fail', 'Verifica los datos ingresados.');
         }
+        $datos = $this->request->getPost();
 
         // Subir la imagen
-        $imagen = $this->request->getFile('imagen');
         $nombreImagen = $imagen->getRandomName();
-
+        $datos['imagen'] = $nombreImagen;
         // Guardar producto
-        $datos =[
+       /* $datos =[
             'nombre_prod' => $this->request->getPost('nombre_prod'),
             'categoria_id' => $this->request->getPost('categoria_id'),
             'precio' => $this->request->getPost('precio'),
@@ -84,11 +87,10 @@ class Producto_controller extends Controller {
             'stock_min' => $this->request->getPost('stock_min'),
             'eliminado' => 'NO',
             'imagen' => $imagen->getName(),
-        ];
-        $producto = new productos_model();
-        $producto->insert($datos);
+        ]; */
+        $productoModel->save($datos);
+        $imagen->move(ROOTPATH . 'assets\img\catalogo/', $nombreImagen);
         session()->setFlashdata('success', 'Alta exitosa...');
-       /* $imagen->move(ROOTPATH . 'assets\img\catalogo/', $nombreImagen); */
         return redirect()->to(base_url('crearProducto'));
     }
   }
@@ -96,7 +98,7 @@ class Producto_controller extends Controller {
   // show single producto (mostrar un producto por id)
 public function singleproducto($id = null){
 
-    $productoModel = new productos_Model();
+    $productoModel = new productos_model();
     $data['old'] = $productoModel->where('id', $id)->first();
     if (empty($data['old'])) {
         // lanzar error
@@ -104,14 +106,86 @@ public function singleproducto($id = null){
     }
 
     // instancio el modelo de categorias
-    $categoriasM = new categoria_model();
+    $categoriasM = new categorias_model();
     $data['categorias'] = $categoriasM->getCategorias(); //traigo categorias
 
     $dato['titulo'] = 'Crud_productos';
     echo view('Header', $dato);
     echo view('Barradenavegacion');
-    echo view('back/productos/edit', $data);
+    echo view('editarProducto', $data);
     echo view('Footer');
 }
+
+public function modifica($id){
+    $productoModel = new productos_model();
+    $id = $productoModel->where('id', $id)->first();
+    $img = $this->request->getFile('imagen');
+
+    // Verifica si se cargó un archivo de imagen válido
+    if ($img && $img->isValid()) {
+        // Se cargó una imagen válida correctamente
+        $nombre_aleatorio = $img->getRandomName();
+        $img->move(ROOTPATH . 'assets\img\catalogo/', $nombre_aleatorio);
+        $data = [
+            'nombre_prod' => $this->request->getVar('nombre_prod'),
+            'imagen' => $img->getName(),
+            // completar con los demás campos
+            'categoria_id' => $this->request->getVar('categoria'),
+            'precio' => $this->request->getVar('precio'),
+            'precio_vta' => $this->request->getVar('precio_vta'),
+            'stock' => $this->request->getVar('stock'),
+            'stock_min' => $this->request->getVar('stock_min'),
+        ];
+    } else {
+        // No se cargó una nueva imagen, solo actualiza los datos del producto sin sobrescribir el campo imagen
+        $data = [
+            'nombre_prod' => $this->request->getVar('nombre_prod'),
+            // completar con los demás campos
+            'categoria_id' => $this->request->getVar('categoria'),
+            'precio' => $this->request->getVar('precio'),
+            'precio_vta' => $this->request->getVar('precio_vta'),
+            'stock' => $this->request->getVar('stock'),
+            'stock_min' => $this->request->getVar('stock_min'),
+        ];
+    }
+
+    $productoModel->update($id, $data);
+    session()->setFlashdata('success', 'Modificación Exitosa...');
+    return redirect()->to(base_url('Crud_productos'));
+}
+// eliminar lógicamente
+public function borrarProducto($id)
+{
+    $productoModel = new productos_model();
+    $data['eliminado'] = $productoModel->where('id', $id)->first();
+    $data['eliminado'] = 'SI';
+    $productoModel->update($id, $data);
+    return $this->response->redirect(site_url('Crud_productos'));
+}
+
+public function eliminados()
+{
+    $productoModel = new productos_model();
+    $data['producto'] = $productoModel->getProductos();
+    // $data['producto'] = $productoModel->orderBy('id', 'DESC')->findAll();
+    $dato['titulo'] = 'Crud_productos';
+    echo view('Header', $dato);
+    echo view('Barradenavegacion');
+    echo view('Productos_eliminados', $data);
+    echo view('Footer');
+}
+
+public function activarProducto($id)
+{
+    $productoModel = new productos_model();
+    $data['eliminado'] = $productoModel->where('id', $id)->first();
+    $data['eliminado'] = 'NO';
+    $productoModel->update($id, $data);
+    session()->setFlashdata('success', 'Activación Exitosa...');
+    return $this->response->redirect(site_url('Crud_productos'));
+    // return $this->response->redirect(site_url('crear'));
+}
+
+
 
 }

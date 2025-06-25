@@ -26,11 +26,11 @@
         <?php if (!empty($productos)): ?>
             <?php foreach ($productos as $prod): ?>
                 <tr>
-                    <td><?= esc($prod['producto_id']) ?></td>
+                    <td><?= esc($prod['id']) ?></td>
                     <td><?= esc($prod['nombre_prod']) ?></td>
                     <td>
                         <?php if (!empty($prod['imagen'])): ?>
-                            <img src="<?= base_url('assets/uploads' . $prod['imagen']) ?>" width="60" alt="Imagen producto">
+                            <img src="<?= base_url('assets\img\catalogo/' . $prod['imagen']) ?>" width="60" alt="Imagen producto">
                         <?php else: ?>
                             Sin imagen
                         <?php endif; ?>
@@ -42,12 +42,12 @@
                     <td><?= esc($prod['stock_min']) ?></td>
                     <td><?= esc($prod['eliminado'] === 'SI' ? 'baja' : 'Activo') ?></td>
                     <td>
-                        <a href="<?= base_url('producto/singleproducto/' . $prod['producto_id']) ?>" class="btn btn-warning btn-sm">Editar</a>
+                        <a href="<?= base_url('singleProducto' . $prod['id']) ?>" class="btn btn-warning btn-sm">Editar</a>
 
                         <?php if ($prod['eliminado'] === 'SI'): ?>
-                            <a href="<?= base_url('producto/activarproducto/' . $prod['producto_id']) ?>" class="btn btn-success btn-sm">Activar</a>
+                            <a href="<?= base_url('activarProducto' . $prod['id']) ?>" class="btn btn-success btn-sm">Activar</a>
                         <?php else: ?>
-                            <a href="<?= base_url('producto/deleteproducto/' . $prod['producto_id']) ?>" class="btn btn-danger btn-sm" onclick="return confirm('¿Estás seguro de eliminar este producto?')">Eliminar</a>
+                            <a href="<?= base_url('borrarProducto' . $prod['id']) ?>" class="btn btn-danger btn-sm" onclick="return confirm('¿Estás seguro de eliminar este producto?')">Eliminar</a>
                         <?php endif; ?>
                     </td>
                 </tr>
