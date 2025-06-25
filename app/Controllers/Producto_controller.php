@@ -50,12 +50,12 @@ class Producto_controller extends Controller {
             'precio_vta'=>'required|numeric',
             'stock'=>'required',
             'stock_min'=>'required',
-            'imagen'=>'uploaded[imagen]'
+            'imagen'=>'uploaded[imagen]|is_image[imagen]|max_size[imagen,4096]',
         ]);
 
         $productoModel = new productos_model();
         if(!$input){
-            $categoriaModel = new categoria_model();
+            $categoriaModel = new categorias_model();
             $data['categorias'] = $categoriaModel->getCategorias();
             $data['validation'] = $this->validator;
 
@@ -73,23 +73,23 @@ class Producto_controller extends Controller {
         // Subir la imagen
         $imagen = $this->request->getFile('imagen');
         $nombreImagen = $imagen->getRandomName();
-        $imagen->move(ROOTPATH.'assets/uploads', $nombreImagen);
 
         // Guardar producto
         $datos =[
-            'nombre_prod' => $this->request->getVar('nombre_prod'),
-            'categoria_id' => $this->request->getVar('categoria_id'),
-            'precio' => $this->request->getVar('precio'),
-            'precio_vta' => $this->request->getVar('precio_vta'),
-            'stock' => $this->request->getVar('stock'),
-            'stock_min' => $this->request->getVar('stock_min'),
+            'nombre_prod' => $this->request->getPost('nombre_prod'),
+            'categoria_id' => $this->request->getPost('categoria_id'),
+            'precio' => $this->request->getPost('precio'),
+            'precio_vta' => $this->request->getPost('precio_vta'),
+            'stock' => $this->request->getPost('stock'),
+            'stock_min' => $this->request->getPost('stock_min'),
             'eliminado' => 'NO',
-            'imagen' => $nombreImagen 
+            'imagen' => $imagen->getName(),
         ];
         $producto = new productos_model();
         $producto->insert($datos);
         session()->setFlashdata('success', 'Alta exitosa...');
-        return $this->response->redirect(site_url('crearProducto'));
+       /* $imagen->move(ROOTPATH . 'assets\img\catalogo/', $nombreImagen); */
+        return redirect()->to(base_url('crearProducto'));
     }
   }
 

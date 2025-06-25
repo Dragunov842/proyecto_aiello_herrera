@@ -81,7 +81,7 @@
                                     </div>
                                    <div class="mb-2">
                                         <label for="imagen" class="form-label">Imagen</label>
-                                        <input class="form-control" type="file" name="imagen" id="imagen" accept="image/png, image/jpg, image/jpeg" required>
+                                        <input class="form-control" type="File" name="imagen" id="imagen" accept="image/png, image/jpg, image/jpeg" required>
                                         <?php if($validation->getError('imagen')): ?>
                                             <div class="alert alert-danger mt-2">
                                             <?= $validation->getError('imagen'); ?>
