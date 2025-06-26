@@ -29,6 +29,16 @@ class Listado_Productos extends Controller
         return $this->_cargarVistasComunes($mainContent, $data);
     }
 
+    public function productosEstatico()
+    {
+        $datosProductos['productos'] = $this->productos->obtenerProductosActivos();
+        $datosProductos['categorias'] = $this->categorias->findAll();
+        $datosProductos['titulo'] = "Producto";
+
+        $data['titulo'] = "Productos Leblanc";
+        $mainContent = view("productosEstatico", $datosProductos, ['returnType' => 'string']);
+        return $this->_cargarVistasComunes($mainContent, $data);
+    }
     // Se buscan los productos en relación a la categoria de las mismas
     public function filtrarProducto()
     {    
@@ -46,6 +56,25 @@ class Listado_Productos extends Controller
 
         $data['titulo'] = "Productos Leblanc";
         $mainContent = view("Catalogo", $datosProductos, ['returnType' => 'string']);
+        return $this->_cargarVistasComunes($mainContent, $data);
+    }
+
+    public function filtrarProductoEstatico()
+    {    
+        $id_categoria = $this->request->getPost("categoria_id");
+
+        if($id_categoria == ""){
+            $datosProductos['productos'] = $this->productos->obtenerProductosActivos();
+            $datosProductos['categorias'] = $this->categorias->getCategorias();
+            $datosProductos['titulo'] = "Producto";
+        }else{
+            $datosProductos['productos'] = $this->productos->like("categoria_id", $id_categoria)->obtenerProductosActivos();
+            $datosProductos['categorias'] = $this->categorias->getCategorias();
+            $datosProductos['titulo'] = "Producto";
+        }  
+
+        $data['titulo'] = "Productos Leblanc";
+        $mainContent = view("productosEstatico", $datosProductos, ['returnType' => 'string']);
         return $this->_cargarVistasComunes($mainContent, $data);
     }
 

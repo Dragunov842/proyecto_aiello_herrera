@@ -13,7 +13,7 @@ $perfil = $session->get('perfil_id');?>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <?php if ($perfil == 0): ?>
-                    <li class="nav-item"><a class="nav-link" href="<?= base_url('login'); ?>">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?= base_url('productosEstatico'); ?>">Productos</a></li>
                     <li class="nav-item"><a class="nav-link" href="<?= base_url('comercializacion'); ?>">Comercialización</a></li>
                     <li class="nav-item"><a class="nav-link" href="<?= base_url('registrar'); ?>">Registrarse</a></li>
                     <li class="nav-item"><a class="nav-link" href="<?= base_url('login'); ?>">Iniciar sesión</a></li>

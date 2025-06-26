@@ -15,6 +15,7 @@ $routes->get('condiciones', 'Home::condiciones');
 $routes->get('comercializacion', 'Home::comercializacion');
 $routes->get('inicioSesion', 'Home::inicioSesion');
 
+
 //usuario
 $routes->get('registrar', 'Usuario_controller::create');
 $routes->post('enviar-form', 'Usuario_controller::formValidation');
@@ -46,6 +47,8 @@ $routes->post('guardar-categoria', 'Categoria_controller::guardar');
 //Listados
 $routes->get('listado-productos', 'Listado_Productos::listarProductos');
 $routes->post('listado-productosfiltrados', 'Listado_Productos::filtrarProducto');
+$routes->get('productosEstatico', 'Listado_Productos::productosEstatico');
+$routes->post('listado-estatico', 'Listado_Productos::filtrarProductoEstatico');
 
 //Carrito
 $routes->post('agregar-al-carrito', 'CarritoController::agregar');

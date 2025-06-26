@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\productos_model;
+use App\Models\categorias_model;
 
 class Home extends BaseController
 {
