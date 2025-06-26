@@ -8,24 +8,31 @@
         <img src="assets/img/mapa.png" alt="Mapa" width="500px" class="Mapa">
     </a>
 </section>
-            <section>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1" style="font-size: 20px; color:white;">Correo Electrónico</label>
-                    <input type="email" class="form-control negro" id="miInput2" style="background-color: white; color: black;" placeholder="Correo@ejemplo.com">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlSelect1" style="font-size: 20px; color:white;">Tipo Consulta</label>
-                    <select class="form-control" id="miInput2" style="background-color: white; color: black;">
-                        <option>Atención al Cliente</option>
-                        <option>Consulta</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1" style="font-size: 20px; color:white;">Descripción</label>
-                    <textarea class="form-control" id="miInput2" style="background-color: white; color: black;" placeholder="¿Cómo podemos ayudarte?" rows="3"></textarea>
-                </div>
-                <form action="<?= base_url('contactenos'); ?>">
-                                <button type="submit" id="send_form" class="btn btn-success">Enviar</button>
-                                <button type="reset" class="btn btn-danger">Cancelar</button>
-                </form>
-            </section>           
+<section>
+  <form action="<?= base_url('contactenos'); ?>">
+    <div class="form-group mb-3">
+      <label for="correo" style="font-size: 20px; color:white;">Correo Electrónico</label>
+      <input type="email" class="form-control negro" id="correo" name="correo"
+             style="background-color: white; color: black;" placeholder="Correo@ejemplo.com" required>
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="tipo" style="font-size: 20px; color:white;">Tipo Consulta</label>
+      <select class="form-control" id="tipo" name="tipo"
+              style="background-color: white; color: black;" required>
+        <option value="cliente">Atención al Cliente</option>
+        <option value="consulta">Consulta</option>
+      </select>
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="descripcion" style="font-size: 20px; color:white;">Descripción</label>
+      <textarea class="form-control" id="descripcion" name="descripcion"
+                style="background-color: white; color: black;" placeholder="¿Cómo podemos ayudarte?" rows="3" required></textarea>
+    </div>
+
+    <button type="submit" id="send_form" class="btn btn-success">Enviar</button>
+    <button type="reset" class="btn btn-danger">Cancelar</button>
+  </form>
+</section>
+          

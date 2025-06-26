@@ -31,6 +31,7 @@ class Categoria_controller extends Controller
 
         if (!$this->validate($reglas)) {
             return view('Header')
+                . view('Barradenavegacion')
                 . view('Formulario_categoria', ['validation' => $this->validator])
                 . view('Footer');
         }

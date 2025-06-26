@@ -1,36 +1,46 @@
 <footer class="footer">
-  <div class="footer-content">
-    <div class="iconos">
-      <a href="https://www.instagram.com/cafeleblanc_ve/">
-        <img src="assets/img/Instagram.png" alt="icono instagram" class="icono-img">
-      </a>
-      <a href="https://web.whatsapp.com">
-        <img src="assets/img/whatsapp.png" alt="icono whatsapp" class="icono-img">
-      </a>
+  <div class="container">
+    <div class="row text-center text-md-start align-items-center">
+      
+      <!-- Iconos sociales -->
+      <div class="col-12 col-md-4 mb-3 mb-md-0 d-flex justify-content-center justify-content-md-start">
+        <div class="iconos d-flex gap-3">
+          <a href="https://www.instagram.com/cafeleblanc_ve/">
+            <img src="assets/img/Instagram.png" alt="icono instagram" class="icono-img" width="30">
+          </a>
+          <a href="https://web.whatsapp.com">
+            <img src="assets/img/whatsapp.png" alt="icono whatsapp" class="icono-img" width="30">
+          </a>
+        </div>
+      </div>
+
+      <!-- Texto legal -->
+      <div class="col-12 col-md-4 mb-3 mb-md-0 text-center">
+        <p class="footer-text mb-0">
+          | Leblanc™ todos los derechos registrados 2025 |
+        </p>
+      </div>
+
+      <!-- Enlaces de navegación -->
+      <div class="col-12 col-md-4 d-flex flex-column flex-md-row justify-content-center justify-content-md-end gap-2">
+        <a href="<?= base_url('contactenos'); ?>" class="footer-nav">Contáctenos</a>
+        <a href="<?= base_url('nosotros'); ?>" class="footer-nav">Sobre nosotros</a>
+        <a href="<?= base_url('condiciones'); ?>" class="footer-nav">Términos y condiciones</a>
+      </div>
     </div>
 
-    <p class="footer-text">
-      | Leblanc™ todos los derechos registrados 2025 |
-    </p>
-
-    <nav class="footer-nav">
-      <a href="<?php echo base_url('contactenos');?>" class="nav-link">Contáctenos</a>
-      <a href="<?php echo base_url('nosotros');?>" class="nav-link">Sobre nosotros</a>
-      <a href="<?php echo base_url('condiciones');?>" class="nav-link">Terminos y condiciones</a>
-    </nav>
+    <!-- Suscripción -->
+    <div class="row mt-4">
+      <div class="col-12 text-center">
+        <h5>Suscríbete Para Conocer Novedades</h5>
+        <p>Mensualmente con Ofertas y Novedades Exclusivas</p>
+        <form class="d-flex flex-column flex-sm-row justify-content-center gap-2 mt-2" id="miInput">
+          <input class="form-control w-auto" type="email" placeholder="Correo Electrónico" required>
+          <button type="submit" class="btn btn-primary" onclick="alert('Gracias por su suscripción')">Suscribirse</button>
+        </form>
+      </div>
+    </div>
   </div>
-  <div class="col-md-3 offset-md-4 mb-3">
-                    <h5> Suscribete Para Conocer Novedades</h5>
-                    <p>Mensualmente con Ofertas y Novedades Exclusivas</p>
-                    <div class="d-flex flex-column flex-sm-row w-200 gap-2">
-                        <form class="form-outline mt-2" id="miInput">
-                            <input class="form-control" type="text" placeholder="Correo Electronico" aria-label="text">
-                        </form>
-                        <button class="btn btn-primary" onclick="alert('Gracias por su suscripción')">Suscribirse</button>
-                    </div>
-  </div>
-
-
 
 </footer>
 </body>
