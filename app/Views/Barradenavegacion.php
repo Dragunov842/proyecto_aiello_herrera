@@ -28,6 +28,7 @@ $perfil = $session->get('perfil_id');?>
                     <li class="nav-item"><a class="nav-link" href="<?= base_url('listado-productos'); ?>">Productos</a></li>
                     <li class="nav-item"><a class="nav-link" href="<?= base_url('comercializacion'); ?>">Comercialización</a></li>
                     <li class="nav-item"><a class="nav-link" href="<?= base_url('ver-carrito') ?>" class="btn btn-outline-light"> 🛒 Carrito (<?= count(session()->get('carrito') ?? []) ?>)</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?= base_url('listarVentas'); ?>">Historial de ventas</a></li>
                     <li class="nav-item"><a class="nav-link text-danger" href="<?= base_url('cerrarSesion'); ?>">Cerrar sesión</a></li>
 
                 <?php elseif ($perfil == 2): ?>

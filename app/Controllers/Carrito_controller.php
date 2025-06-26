@@ -117,7 +117,7 @@ class Carrito_controller extends Controller
         $idUsuario = $session->get('id');
 
         if (empty($carrito) || !$idUsuario) {
-            return redirect()->to('carrito')->with('mensaje', 'Carrito vacío o usuario no logueado.');
+            return redirect()->to('ver-carrito')->with('mensaje', 'Carrito vacío o usuario no logueado.');
         }
 
         $productoModel = new productos_model();
@@ -128,7 +128,7 @@ class Carrito_controller extends Controller
         foreach ($carrito as $item) {
             $producto = $productoModel->find($item['id']);
             if (!$producto || $producto['stock'] < $item['cantidad']) {
-                return redirect()->to('carrito')->with('mensaje', 'Stock insuficiente para: ' . $item['nombre']);
+                return redirect()->to('ver-carrito')->with('mensaje', 'Stock insuficiente para: ' . $item['nombre']);
             }
         }
 
@@ -159,9 +159,7 @@ class Carrito_controller extends Controller
                 'stock' => $producto['stock'] - $item['cantidad']
             ]);
         }
-
         $session->remove('carrito');
-
         return redirect()->to('ver-carrito')->with('mensaje', '¡Compra realizada con éxito!');
     }
 }

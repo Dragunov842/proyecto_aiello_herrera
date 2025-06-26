@@ -2,19 +2,19 @@
 
 namespace App\Controllers;
 
-use App\Models\VentasDetalleModel;
-use App\Models\VentasCabeceraModel;
+use App\Models\ventasDetalle_model;
+use App\Models\ventasCabecera_model;
 use App\Models\productos_model;
 use App\Models\usuarios_model;
 use CodeIgniter\Controller;
 
-class VentasDetalleController extends Controller
+class ventasDetalle_controller extends Controller
 {
 
     public function verDetalle($ventaId)
     {
-        $ventaModel = new VentasCabeceraModel();
-        $detalleModel = new VentasDetalleModel();
+        $ventaModel = new ventasCabecera_model();
+        $detalleModel = new ventasDetalle_model();
         $productoModel = new productos_model();
         $usuarioModel = new usuarios_model();
 
@@ -26,7 +26,7 @@ class VentasDetalleController extends Controller
 
         $usuario = $usuarioModel->find($venta['usuario_id']);
 
-        $detalles = $detalleModel->where('venta_id', $ventaId)->findAll();
+        $detalles = $detalleModel->where('ventas_id', $ventaId)->findAll();
 
         $detalleConProductos = [];
 
@@ -34,22 +34,25 @@ class VentasDetalleController extends Controller
             $producto = $productoModel->find($detalle['producto_id']);
 
             $detalleConProductos[] = [
-                'producto_descripcion' => $producto['descripcion'] ?? 'Producto desconocido',
+                'producto_descripcion' => $producto['nombre_prod'] ?? 'Producto desconocido',
                 'cantidad' => $detalle['cantidad'],
                 'precio' => $detalle['precio']
             ];
         }
 
-        return view('ventas/detalle', [
+        return view('Header')
+        . view('Barradenavegacion')
+        . view('ventasDetalle', [
             'venta' => $venta,
             'usuario' => $usuario,
             'detalles' => $detalleConProductos
-        ]);
+        ])
+        . view('Footer');
     }
 
     public function crear($ventaId, $productoId, $cantidad, $precio)
     {
-        $detalleModel = new VentasDetalleModel();
+        $detalleModel = new ventasDetalle_model();
 
         return $detalleModel->insert([
             'venta_id' => $ventaId,
@@ -77,19 +80,22 @@ class VentasDetalleController extends Controller
 
         $detalle = [];
         foreach ($carrito as $item) {
-            $producto = $productoModel->find($item['idProducto']);
+            $producto = $productoModel->find($item['id']);
 
             $detalle[] = [
-                'descripcion' => $producto['descripcion'] ?? 'Producto desconocido',
+                'descripcion' => $producto['nombre_prod'] ?? 'Producto desconocido',
                 'cantidad' => $item['cantidad'],
                 'precio' => $producto['precio'] ?? 0
             ];
         }
+    
 
-
-        return view('ventasDetalle', [
+        return view('Header')
+        . view('Barradenavegacion')
+        . view('ventasUsuario', [
             'usuario' => $usuario,
             'detalle' => $detalle
-        ]);
+        ])
+        . view('Footer');
     }
 }

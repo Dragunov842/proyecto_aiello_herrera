@@ -1,9 +1,9 @@
+<br></br>
 <div class="container py-5">
   <div class="row justify-content-center">
     <div class="col-12 col-md-8 col-lg-6">
       <div class="card shadow-lg border-0 rounded-4 bg-light">
         <div class="card-body p-4">
-
           <h2 class="text-center mb-4 text-primary">Registrar nueva categoría</h2>
 
           <?php if(session()->getFlashdata('success')): ?>

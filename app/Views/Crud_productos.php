@@ -1,4 +1,5 @@
 <div class="container mt-4">
+<br></br>
   <h2 class="title text-white mt-5 text-center text-md-start"><?= esc($titulo) ?></h2>
 
   <?php if (session()->getFlashdata('success')): ?>

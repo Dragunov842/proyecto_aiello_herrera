@@ -1,8 +1,9 @@
+<br></br>
+<br></br>
 <div class="container mt-3 mb-4">
     <div class="card mx-auto shadow-sm" style="max-width: 720px;">
-        <div class="card-header text-center">
             <h2 class="title text-danger mb-0">Alta de productos</h2>
-        </div>
+
 
         <!-- Mensajes Flash -->
         <?php if (!empty(session()->getFlashData('fail'))): ?>

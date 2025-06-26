@@ -1,4 +1,6 @@
 <div class="container mt-5">
+<br></br>
+<br></br>
     <h2 class="title color:white text-center mb-4">Tu carrito</h2>
     <?php if (session()->has('mensaje')) : ?>
     <div class="alert alert-warning text-center">
@@ -52,3 +54,5 @@
         </div>
     <?php endif; ?>
 </div>
+<br></br>
+<br></br>

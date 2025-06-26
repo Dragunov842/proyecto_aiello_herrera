@@ -125,10 +125,9 @@ public function modifica($id){
     if ($img && $img->isValid()) {
         // Se cargó una imagen válida correctamente
         $nombre_aleatorio = $img->getRandomName();
-        $img->move(ROOTPATH . 'assets\img\catalogo/', $nombre_aleatorio);
         $data = [
             'nombre_prod' => $this->request->getVar('nombre_prod'),
-            'imagen' => $img->getName(),
+            'imagen' => $nombre_aleatorio,
             // completar con los demás campos
             'categoria_id' => $this->request->getVar('categoria'),
             'precio' => $this->request->getVar('precio'),
@@ -136,6 +135,8 @@ public function modifica($id){
             'stock' => $this->request->getVar('stock'),
             'stock_min' => $this->request->getVar('stock_min'),
         ];
+
+        
     } else {
         // No se cargó una nueva imagen, solo actualiza los datos del producto sin sobrescribir el campo imagen
         $data = [
@@ -147,10 +148,14 @@ public function modifica($id){
             'stock' => $this->request->getVar('stock'),
             'stock_min' => $this->request->getVar('stock_min'),
         ];
+        
     }
 
     $productoModel->update($id, $data);
     session()->setFlashdata('success', 'Modificación Exitosa...');
+    if ($img && $img->isValid()){ 
+    $img->move(ROOTPATH . 'assets\img\catalogo/', $nombre_aleatorio);
+}
     return redirect()->to(base_url('Crud_productos'));
 }
 // eliminar lógicamente

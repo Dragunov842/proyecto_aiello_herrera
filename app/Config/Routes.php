@@ -57,3 +57,6 @@ $routes->post('carritoActualizarCantidad', 'Carrito_controller::actualizarCantid
 $routes->get('carritoEliminar(:num)','Carrito_controller::eliminar/$1');
 $routes->get('carritoVaciar','Carrito_controller::vaciar');
 $routes->get('finalizarCompra', 'Carrito_controller::finalizarCompra');
+$routes->get('listarVentas', 'ventasCabecera_controller::listarVentas');
+$routes->get('verDetalle(:num)', 'ventasDetalle_controller::verDetalle/$1');
+$routes->get('ventasUsuario', 'ventasDetalle_controller::ventaDetalle');
