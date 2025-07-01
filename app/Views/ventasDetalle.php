@@ -63,6 +63,13 @@
         <a href="<?= site_url('listarVentas') ?>" class="btn btn-outline-primary">
             ← Volver al Historial
         </a>
+        <!-- Botón para descargar factura PDF -->
+<div class="text-center mt-2">
+    <a href="<?= site_url('descargarFactura' . $venta['id']) ?>" class="btn btn-danger">
+        <i class="bi bi-file-earmark-pdf"></i> Descargar Factura (PDF)
+    </a>
+</div>
+
     </div>
 </div>
 

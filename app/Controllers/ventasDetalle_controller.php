@@ -8,6 +8,8 @@ use App\Models\productos_model;
 use App\Models\usuarios_model;
 use CodeIgniter\Controller;
 
+
+
 class ventasDetalle_controller extends Controller
 {
 
@@ -98,4 +100,43 @@ class ventasDetalle_controller extends Controller
         ])
         . view('Footer');
     }
+
+    public function descargarFactura($ventaId)
+    {
+        // Cargar modelos
+        $ventaModel = new ventasCabecera_model();
+        $usuarioModel = new usuarios_model();
+        $detalleModel = new ventasDetalle_model();
+
+        // Obtener datos
+        $venta = $ventaModel->find($ventaId);
+        $usuario = $usuarioModel->find($venta['usuario_id']);
+        $detalles = $detalleModel->where('ventas_id', $ventaId)->findAll();
+
+        // Cargar Dompdf manualmente
+        require_once(APPPATH . 'Libraries/dompdf/autoload.inc.php');
+
+        // Inicializar Dompdf
+        $options = new \Dompdf\Options();
+        $options->set('isRemoteEnabled', true); // para permitir imágenes externas
+        $dompdf = new \Dompdf\Dompdf($options);
+
+        // Generar HTML desde la vista
+        $html = view('factura', [
+            'venta' => $venta,
+            'usuario' => $usuario,
+            'detalles' => $detalles
+        ]);
+
+        // Generar PDF
+        $dompdf->loadHtml($html);
+        $dompdf->setPaper('A4', 'portrait');
+        $dompdf->render();
+
+        // Descargar el PDF
+        return $dompdf->stream("Factura_Venta_{$ventaId}.pdf", ["Attachment" => true]);
+    }
+
 }
+    
+

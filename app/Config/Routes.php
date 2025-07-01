@@ -51,7 +51,7 @@ $routes->get('productosEstatico', 'Listado_Productos::productosEstatico');
 $routes->post('listado-estatico', 'Listado_Productos::filtrarProductoEstatico');
 
 //Carrito
-$routes->post('agregar-al-carrito', 'CarritoController::agregar');
+$routes->post('agregar-al-carrito', 'Carrito_Controller::agregar');
 $routes->get('ver-carrito', 'Carrito_controller::index');
 $routes->post('carritoActualizarCantidad', 'Carrito_controller::actualizarCantidad');
 $routes->get('carritoEliminar(:num)','Carrito_controller::eliminar/$1');
@@ -60,3 +60,4 @@ $routes->get('finalizarCompra', 'Carrito_controller::finalizarCompra');
 $routes->get('listarVentas', 'ventasCabecera_controller::listarVentas');
 $routes->get('verDetalle(:num)', 'ventasDetalle_controller::verDetalle/$1');
 $routes->get('ventasUsuario', 'ventasDetalle_controller::ventaDetalle');
+$routes->get('descargarFactura(:num)', 'ventasDetalle_controller::descargarFactura/$1');

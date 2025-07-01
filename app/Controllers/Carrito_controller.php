@@ -25,41 +25,30 @@ class Carrito_controller extends Controller
             . view('Footer');
     }
 
-    public function agregar($producto)
+    public function agregar()
     {
-        $productoModel = new productos_model();
-        $producto = $productoModel->find($producto_id);
         $session = session();
+        $cart = $session->get('carrito') ?? [];
 
-        if (!$producto || !$session->has('id')) {
-            return redirect()->to('/')->with('mensaje', 'Producto no encontrado o usuario no logueado.');
-        }
+        $id = $this->request->getPost('id');
+        $nombre = $this->request->getPost('nombre');
+        $precio = $this->request->getPost('precio');
+        $cantidad = (int) ($this->request->getPost('cantidad') ?? 1);
 
-        $carrito = $session->get('carrito') ?? [];
-
-        $encontrado = false;
-        foreach ($carrito as &$item) {
-            if ($item['id'] == $producto_id) {
-                if ($item['cantidad'] < $producto['cantidad']) {
-                    $item['cantidad'] += 1;
-                }
-                $encontrado = true;
-                break;
-            }
-        }
-
-        if (!$encontrado) {
-            $carrito[] = [
-                'id' => $producto['id'],
-                'nombre' => $producto['nombre'],
-                'precio' => $producto['precio'],
-                'cantidad' => 1,
-                'stock' => $producto['cantidad']
+        // Si ya existe en el carrito, sumar cantidad
+        if (isset($cart[$id])) {
+            $cart[$id]['cantidad'] += 1;
+        } else {
+            $cart[$id] = [
+                'id' => $id,
+                'nombre' => $nombre,
+                'precio' => $precio,
+                'cantidad' => $cantidad
             ];
         }
 
-        $session->set('carrito', $carrito);
-        return redirect()->to('/carrito');
+        $session->set('carrito', $cart);
+        return redirect()->back()->with('success', 'Producto agregado al carrito');
     }
 
     public function actualizarCantidad()

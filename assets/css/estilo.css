@@ -171,6 +171,55 @@ section {
   .nav-link:hover {
     text-decoration: underline;
   }
+
+    /* Cambiar el color de texto de toda la tabla */
+    #tablaVentas, 
+    #tablaVentas td {
+        color: rgb(0, 0, 0) !important;
+    }
+
+    /* Cabecera de la tabla (opcional: si quieres mantenerla oscura pero con texto blanco) */
+    .table-dark th {
+        color: white !important;
+    }
+
+    /* Estilo de los inputs de filtro */
+    input[type="search"],
+    input[type="date"] {
+        background-color: #333;
+        color: white;
+        border: 1px solid #555;
+    }
+
+    /* Estilo del dropdown de "Mostrar N registros" */
+    select[name="tablaVentas_length"] {
+        background-color: #333;
+        color: rgb(0, 0, 0);
+        border: 1px solid #555;
+    }
+
+    /* Estilo de los paginadores */
+    .dataTables_wrapper .dataTables_paginate .paginate_button {
+        color: white !important;
+        background-color: #444 !important;
+        border: 1px solid #666 !important;
+    }
+
+    .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+        background-color: #007bff !important;
+        color: white !important;
+    }
+
+    /* Texto inferior: info de la tabla */
+    .dataTables_info {
+        color: rgba(0, 0, 0, 0) !important;
+    }
+
+    /* Borde de celdas más visibles (opcional) */
+    .table-bordered td, .table-bordered th {
+        border: 1px solid #999;
+    }
+
   
 @media (max-width: 768px) {
     header {
