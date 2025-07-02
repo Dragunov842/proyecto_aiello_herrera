@@ -30,17 +30,40 @@
     </div>
 
     <!-- Suscripción -->
-    <div class="row mt-4">
-      <div class="col-12 text-center">
-        <h5>Suscríbete Para Conocer Novedades</h5>
-        <p>Mensualmente con Ofertas y Novedades Exclusivas</p>
-        <form class="d-flex flex-column flex-sm-row justify-content-center gap-2 mt-2" id="miInput">
-          <input class="form-control w-auto" type="email" placeholder="Correo Electrónico" required>
-          <button type="submit" class="btn btn-primary" onclick="alert('Gracias por su suscripción')">Suscribirse</button>
-        </form>
-      </div>
-    </div>
+<div class="row mt-4">
+  <div class="col-12 text-center">
+    <h5>Suscríbete Para Conocer Novedades</h5>
+    <p>Mensualmente con Ofertas y Novedades Exclusivas</p>
+
+    <!-- Formulario de Suscripción -->
+    <form class="d-flex flex-column flex-sm-row justify-content-center gap-2 mt-2" id="formSuscripcion">
+      <input id="emailInput" class="form-control w-auto" type="email" placeholder="Correo Electrónico">
+      <button type="submit" class="btn btn-primary">Suscribirse</button>
+    </form>
+
+    <!-- Área de mensaje -->
+    <div id="mensajeSuscripcion" class="mt-3"></div>
   </div>
+</div>
+
+<!-- Script de Validación -->
+<script>
+  document.getElementById('formSuscripcion').addEventListener('submit', function(e) {
+    e.preventDefault(); // Evita que se recargue la página
+
+    const emailInput = document.getElementById('emailInput');
+    const mensaje = document.getElementById('mensajeSuscripcion');
+    const email = emailInput.value.trim();
+
+    if (email === '') {
+      mensaje.innerHTML = '<div class="alert alert-warning" role="alert">⚠️ Por favor, ingresa un correo electrónico.</div>';
+    } else {
+      mensaje.innerHTML = '<div class="alert alert-success" role="alert">✅ ¡Gracias por tu suscripción!</div>';
+      emailInput.value = ''; // Limpia el campo después de enviar
+    }
+  });
+</script>
+
 
 </footer>
 </body>

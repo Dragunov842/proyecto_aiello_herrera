@@ -9,7 +9,14 @@
     </a>
 </section>
 <section>
-  <form action="<?= base_url('contactenos'); ?>">
+<form action="<?= base_url('contactenosEnviar'); ?>" method="post">
+  
+<?php if (session()->getFlashdata('mensaje')) : ?>
+    <div class="alert alert-info mt-2">
+        <?= session()->getFlashdata('mensaje') ?>
+    </div>
+<?php endif; ?>
+
     <div class="form-group mb-3">
       <label for="correo" style="font-size: 20px; color:white;">Correo Electrónico</label>
       <input type="email" class="form-control negro" id="correo" name="correo"

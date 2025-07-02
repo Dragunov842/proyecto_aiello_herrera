@@ -3,6 +3,7 @@
 namespace App\Controllers;
 use App\Models\productos_model;
 use App\Models\categorias_model;
+use App\Models\contacto_model;
 
 class Home extends BaseController
 {
@@ -69,5 +70,46 @@ class Home extends BaseController
         echo view('Comercializacion');
         echo view('Footer');
     }
-    
+    public function enviar()
+    {
+        $correo = $this->request->getPost('correo');
+        $tipo = $this->request->getPost('tipo');
+        $descripcion = $this->request->getPost('descripcion');
+
+        if (empty($correo) || empty($tipo) || empty($descripcion)) {
+            session()->setFlashdata('mensaje', 'Todos los campos son obligatorios.');
+            return redirect()->back()->withInput();
+        }
+
+        $modelo = new contacto_model();
+
+        $modelo->insert([
+            'correo' => $correo,
+            'tipo' => $tipo,
+            'descripcion' => $descripcion
+        ]);
+
+        session()->setFlashdata('mensaje', 'Gracias por tu suscripción.');
+        return redirect()->back();
+    }
+    public function listar()
+{
+    $modelo = new contacto_model();
+    $data['consultas'] = $modelo->findAll();
+
+    return view('Header') .
+           view('Barradenavegacion') .
+           view('consultas', $data) .
+           view('Footer');
+}
+
+public function marcarLeido($id)
+{
+    $modelo = new contacto_model();
+    $modelo->update($id, ['leido' => 1]);
+
+    session()->setFlashdata('mensaje', 'Consulta marcada como leída.');
+    return redirect()->to(base_url('contactenosListar'));
+}
+
 }

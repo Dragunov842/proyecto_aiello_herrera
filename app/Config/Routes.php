@@ -14,6 +14,10 @@ $routes->get('contactenos', 'Home::contactenos');
 $routes->get('condiciones', 'Home::condiciones');
 $routes->get('comercializacion', 'Home::comercializacion');
 $routes->get('inicioSesion', 'Home::inicioSesion');
+$routes->post('contactenosEnviar', 'Home::enviar');
+$routes->get('contactenosListar', 'Home::listar');
+$routes->post('contactenosMarcarLeido(:num)', 'Home::marcarLeido/$1');
+
 
 
 //usuario
