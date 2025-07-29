@@ -135,22 +135,43 @@ class Usuario_controller extends Controller {
         echo view("Footer");
     }
     
-    // Actualizar usuario
     public function actualizar($id) {
         $modelo = new usuarios_model();
-
-            $datos = ([
-                'nombre'    => $this->request->getPost('nombre'),
-                'apellido'  => $this->request->getPost('apellido'),
-                'usuario'   => $this->request->getPost('usuario'),
-                'email'     => $this->request->getPost('email'),
-                'perfil_id' => $this->request->getPost('perfil'),
-            ]);
-
-            $modelo->update($id, $datos);
-            session()->setFlashdata('success', 'Usuario actualizado correctamente');
-            return redirect()->to(base_url('Crud_usuarios'));
+    
+        // Obtener los datos actuales
+        $usuarioExistente = $modelo->find($id);
+        if (!$usuarioExistente) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Usuario no encontrado');
         }
+    
+        // Recoger los datos enviados por POST
+        $datosForm = [
+            'nombre'    => $this->request->getPost('nombre'),
+            'apellido'  => $this->request->getPost('apellido'),
+            'usuario'   => $this->request->getPost('usuario'),
+            'email'     => $this->request->getPost('email'),
+            'perfil_id' => $this->request->getPost('perfil'),
+        ];
+    
+        // Eliminar campos vacíos o que no cambiaron (opcional)
+        $datosActualizados = [];
+        foreach ($datosForm as $campo => $valor) {
+            if ($valor !== null && $valor !== '' && $valor !== $usuarioExistente[$campo]) {
+                $datosActualizados[$campo] = $valor;
+            }
+        }
+    
+        // Solo actualizar si hay cambios
+        if (!empty($datosActualizados)) {
+            $modelo->update($id, $datosActualizados);
+            session()->setFlashdata('success', 'Usuario actualizado correctamente');
+        } else {
+            session()->setFlashdata('info', 'No se realizaron cambios en el usuario');
+        }
+    
+        return redirect()->to(base_url('Crud_usuarios'));
+    }
+    
 
     // Eliminar usuario (lógico)
     public function eliminar($id) {
@@ -178,4 +199,66 @@ class Usuario_controller extends Controller {
         session()->setFlashdata('success', 'Usuario activado correctamente');
         return redirect()->to(base_url('usuariosEliminados'));
     }
+
+    public function clienteEditar()
+{
+    $session = session();
+    $id = $session->get('id');
+
+    $modelo = new Usuarios_model();
+    $usuario = $modelo->find($id);
+
+    if (!$usuario) {
+        return redirect()->to('listado-productos')->with('mensaje', 'Usuario no encontrado');
+    }
+
+    return view('Header')
+    . view('Barradenavegacion')
+    . view('clienteEditar', ['usuario' => $usuario])
+    . view('Footer');
+}
+
+
+    public function clienteActualizar()
+    {
+        $session = session();
+    $id = $session->get('id');
+
+    $modelo = new usuarios_model();
+
+    $nombre = $this->request->getPost('nombre');
+    $apellido = $this->request->getPost('apellido');
+    $email = $this->request->getPost('email');
+    $password = $this->request->getPost('contraseña');
+    $password_confirm = $this->request->getPost('contraseña_confirm');
+
+    $datos = [
+        'nombre'   => $nombre,
+        'apellido' => $apellido,
+        'email'    => $email
+    ];
+
+    // Validar y agregar nueva contraseña solo si fue proporcionada
+    if (!empty($password)) {
+        if ($password !== $password_confirm) {
+            return redirect()->back()->withInput()->with('mensaje', 'Las contraseñas no coinciden.');
+        }
+
+        if (strlen($password) < 6) {
+            return redirect()->back()->withInput()->with('mensaje', 'La contraseña debe tener al menos 6 caracteres.');
+        }
+
+        $datos['contraseña'] = password_hash($password, PASSWORD_DEFAULT);
+    }
+    if ($modelo->update($id, $datos)) {
+        $session->set(['nombre' => $nombre, 'apellido' => $apellido, 'email' => $email]);
+        return redirect()->to('clienteEditar')->with('mensaje', 'Datos actualizados correctamente.');
+    } else {
+        return redirect()->back()->with('mensaje', 'Error al actualizar los datos.');
+    }
+    }    
+
+
+
+
 }

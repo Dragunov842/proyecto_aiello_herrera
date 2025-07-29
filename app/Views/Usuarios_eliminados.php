@@ -36,3 +36,5 @@
         <div class="alert alert-info">No hay usuarios eliminados.</div>
     <?php endif ?>
 </div>
+<br></br>
+<br></br>

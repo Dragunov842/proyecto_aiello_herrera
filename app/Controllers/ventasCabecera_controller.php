@@ -38,4 +38,30 @@ class ventasCabecera_controller extends Controller
             . view('ventasTotales', $data)
             . view('Footer');
     }
+
+    public function historialCompras()
+{
+    $session = session();
+    $id_usuario = $session->get('id');
+
+    /* $ventasModel = new \App\Models\ventasCabecera_model();
+    $ventas = $ventasModel->where('usuario_id', $id_usuario)->orderBy('fecha', 'DESC')->findAll();
+    $data['ventas'] = $ventas; */
+
+    $ventaModel = new ventasCabecera_model();
+
+        $ventas = $ventaModel->join('usuarios', 'usuarios.id_usuario = ventas_cabecera.usuario_id')
+                             ->where('ventas_cabecera.usuario_id', $id_usuario)
+                             ->orderBy('fecha', 'DESC')
+                             ->findAll();
+
+        $data['ventas'] = $ventas;
+
+
+    return view('Header')
+    . view('Barradenavegacion') 
+    . view('clienteHistorial', $data)
+    . view('Footer');
+}
+
 }

@@ -19,23 +19,33 @@ $perfil = $session->get('perfil_id');?>
                     <li class="nav-item"><a class="nav-link" href="<?= base_url('login'); ?>">Iniciar sesión</a></li>
 
                 <?php elseif ($perfil == 1): ?>
-                    <li class="nav-item"><a class="nav-link disabled">Usuario: <?= esc($nombre); ?></a></li>
-                    <li class="nav-item"><a class="nav-link" href="<?= base_url('nueva-categoria'); ?>">Agregar Categorías</a></li>
-                    <li class="nav-item"><a class="nav-link" href="<?= base_url('registrar'); ?>">Agregar Usuarios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="<?= base_url('crearProducto'); ?>">Agregar Producto</a></li>
-                    <li class="nav-item"><a class="nav-link" href="<?= base_url('Crud_productos'); ?>">CRUD Productos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="<?= base_url('Crud_usuarios'); ?>">CRUD Usuarios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="<?= base_url('listado-productos'); ?>">Productos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="<?= base_url('contactenosListar'); ?>">Consultas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="<?= base_url('ver-carrito') ?>" class="btn btn-outline-light"> 🛒 Carrito (<?= count(session()->get('carrito') ?? []) ?>)</a></li>
-                    <li class="nav-item"><a class="nav-link" href="<?= base_url('listarVentas'); ?>">Historial de ventas</a></li>
-                    <li class="nav-item"><a class="nav-link text-danger" href="<?= base_url('cerrarSesion'); ?>">Cerrar sesión</a></li>
+    <li class="nav-item">
+        <a class="nav-link disabled">Usuario: <?= esc($nombre); ?></a>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="agregarMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Agregar
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="agregarMenu">
+            <li><a class="dropdown-item" href="<?= base_url('nueva-categoria'); ?>">Categorías</a></li>
+            <li><a class="dropdown-item" href="<?= base_url('registrar'); ?>">Usuarios</a></li>
+            <li><a class="dropdown-item" href="<?= base_url('crearProducto'); ?>">Producto</a></li>
+        </ul>
+    </li>
+
+    <li class="nav-item"><a class="nav-link" href="<?= base_url('Crud_productos'); ?>">CRUD Productos</a></li>
+    <li class="nav-item"><a class="nav-link" href="<?= base_url('Crud_usuarios'); ?>">CRUD Usuarios</a></li>
+    <li class="nav-item"><a class="nav-link" href="<?= base_url('contactenosListar'); ?>">Consultas</a></li>
+    </li>
+    <li class="nav-item"><a class="nav-link" href="<?= base_url('listarVentas'); ?>">Historial de ventas</a></li>
+    <li class="nav-item"><a class="nav-link text-danger" href="<?= base_url('cerrarSesion'); ?>">Cerrar sesión</a></li>
 
                 <?php elseif ($perfil == 2): ?>
-                    <li class="nav-item"><a class="nav-link disabled">Cliente: <?= esc($nombre); ?></a></li>
+                    <li class="nav-item"><a class="nav-link disabled">Usuario: <?= esc($nombre); ?></a>
                     <li class="nav-item"><a class="nav-link" href="<?= base_url('listado-productos'); ?>">Productos</a></li>
                     <li class="nav-item"><a class="nav-link" href="<?= base_url('comercializacion'); ?>">Comercialización</a></li>
                     <li class="nav-item"><a class="nav-link" href="<?= base_url('ver-carrito') ?>" class="btn btn-outline-light"> 🛒 Carrito (<?= count(session()->get('carrito') ?? []) ?>)</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?= base_url('historial-compras') ?>">🧾 Historial de Compras</a></li>
                     <li class="nav-item"><a class="nav-link text-danger" href="<?= base_url('cerrarSesion'); ?>">Cerrar sesión</a></li>
                 <?php endif; ?>
             </ul>

@@ -31,6 +31,17 @@
                         <div class="card-body">
                             <h5 class="card-title"><?= esc($producto['nombre_prod']) ?></h5>
                             <p class="card-text">Precio: $<?= esc($producto['precio_vta']) ?></p>
+
+                            <!-- Botón Comprar -->
+                            <form action="<?= base_url('login') ?>">
+                                <?= csrf_field() ?>
+                                <input type="hidden" name="id" value="<?= $producto['id'] ?>">
+                                <input type="hidden" name="nombre" value="<?= esc($producto['nombre_prod']) ?>">
+                                <input type="hidden" name="precio" value="<?= esc($producto['precio_vta']) ?>">
+                                <input type="hidden" name="cantidad" min="1" value="1">
+                                <button type="submit" class="btn btn-primary btn-sm mt-2">Comprar</button>
+                            </form>
+
                         </div>
                     </div>
                 </div>

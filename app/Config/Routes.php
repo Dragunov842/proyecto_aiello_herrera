@@ -65,3 +65,6 @@ $routes->get('listarVentas', 'ventasCabecera_controller::listarVentas');
 $routes->get('verDetalle(:num)', 'ventasDetalle_controller::verDetalle/$1');
 $routes->get('ventasUsuario', 'ventasDetalle_controller::ventaDetalle');
 $routes->get('descargarFactura(:num)', 'ventasDetalle_controller::descargarFactura/$1');
+
+$routes->get('historial-compras', 'ventasCabecera_controller::historialCompras');
+
