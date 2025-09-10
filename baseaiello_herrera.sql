@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 02-07-2025 a las 02:47:09
+-- Tiempo de generación: 10-09-2025 a las 07:15:21
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -63,7 +63,11 @@ CREATE TABLE `contacto` (
 --
 
 INSERT INTO `contacto` (`id`, `correo`, `tipo`, `descripcion`, `fecha`, `leido`) VALUES
-(1, 'matiasherrera1591@gmail.cmo', 'consulta', 'no puedo ver el footer', '2025-07-02 00:35:27', 1);
+(1, 'matiasherrera1591@gmail.cmo', 'consulta', 'no puedo ver el footer', '2025-07-02 00:35:27', 1),
+(2, 'matias1@gmail.com', 'consulta', 'como se llama el dueño ? ', '2025-07-02 04:43:42', 1),
+(3, 'matias12@gmail.com', 'cliente', 'pruebo que funcione', '2025-07-03 00:44:06', 1),
+(4, 'matias1@gmail.com', 'consulta', 'prueba de consulta\r\n', '2025-07-06 22:18:40', 1),
+(5, 'matias12@gmail.com', 'consulta', 'Como accedo a mis compras?', '2025-07-29 19:09:34', 1);
 
 -- --------------------------------------------------------
 
@@ -107,13 +111,14 @@ CREATE TABLE `productos` (
 --
 
 INSERT INTO `productos` (`id`, `nombre_prod`, `categoria_id`, `precio`, `precio_vta`, `stock`, `stock_min`, `eliminado`, `imagen`) VALUES
-(15, 'Cafe importado', 1, 5000.00, 7500.00, 5, 1, 'NO', '1750950343_5911e8421b9731d579ba.png'),
-(16, 'Nescafe gold ', 1, 4000.00, 9000.00, 10, 1, 'NO', '1750949743_3da6d13cb778ab72e60d.jpg'),
-(17, 'Maquina de Cafe', 3, 20000.00, 40000.00, 5, 1, 'NO', '1750950304_330f371ece4e6fd594a7.jpg'),
-(18, 'Filtros descartables', 7, 2000.00, 3800.00, 10, 1, 'NO', '1750949275_9253f23cb6e0ef7f0803.jpg'),
-(19, 'Manga de cafe ', 7, 1000.00, 2000.00, 5, 1, 'NO', '1750949329_fd599289e9b7ea08cc03.jpg'),
+(15, 'Cafe importado', 1, 5000.00, 7500.00, 5, 1, 'SI', '1750950343_5911e8421b9731d579ba.png'),
+(16, 'Nescafe gold ', 1, 4000.00, 9000.00, 10, 1, 'SI', '1750949743_3da6d13cb778ab72e60d.jpg'),
+(17, 'Maquina de Cafe', 3, 20000.00, 40000.00, 4, 1, 'NO', '1750950304_330f371ece4e6fd594a7.jpg'),
+(18, 'Filtros descartables', 7, 2000.00, 3800.00, 8, 1, 'NO', '1750949275_9253f23cb6e0ef7f0803.jpg'),
+(19, 'Manga de cafe ', 7, 1000.00, 2000.00, 4, 1, 'NO', '1750949329_fd599289e9b7ea08cc03.jpg'),
 (20, 'Capsula Café expreso', 1, 2000.00, 6710.30, 6, 1, 'NO', '1750950819_7ef22673b1cd2d3bc573.jpg'),
-(21, 'Cafetera Atma', 3, 20000.00, 39272.63, 6, 1, 'NO', '1750950267_024da1212be13d3fef71.jpg');
+(21, 'Cafetera Atma', 3, 20000.00, 39272.63, 6, 1, 'NO', '1750950267_024da1212be13d3fef71.jpg'),
+(22, 'Cafe en capsula \"la planta de cafe\" ', 1, 5000.00, 7500.00, 5, 1, 'NO', '1751840772_4d2705f8a66d48f19c39.jpg');
 
 -- --------------------------------------------------------
 
@@ -142,7 +147,8 @@ INSERT INTO `usuarios` (`id_usuario`, `nombre`, `apellido`, `email`, `usuario`, 
 (6, 'Cliente2', 'Cliente2', 'Cliente2@hotmail.com', 'Cliente2', '$2y$10$nKea/KcoEhZTOmkjsWZET.sEzwgNqNR0V0V75.j2ez.y3p7b.ub82', 2, 'NO'),
 (7, 'Admin', 'admin', 'Admin12@hotmail.com', 'Admin', '$2y$10$NR7grEXH06ECA7SH82n9c.2M1rE7hbBNfWBfEM.4ZNOwRv.qalJqG', 1, 'NO'),
 (8, 'Cliente3', 'Cliente3', 'cliente3@hotmail.com', 'Cliente3', '$2y$10$ArYoqNvyZ25OEt6cPAZcSeo2QESPZOikd1gSgO3DsDT/RCua/Jx5W', 2, 'NO'),
-(9, 'Admin2', 'admin2', 'admin2@gmail.com', 'Admin2', '$2y$10$sGgkG8czlGyeWrO1SkljduaTbFMK3jPS50bW/m58qf1cOa9Rm6tmq', 1, 'NO');
+(9, 'Admin2', 'admin2', 'admin2@gmail.com', 'Admin2', '$2y$10$sGgkG8czlGyeWrO1SkljduaTbFMK3jPS50bW/m58qf1cOa9Rm6tmq', 1, 'NO'),
+(10, 'matias', 'Herrera', 'matias1@gmail.com', 'matias1', '$2y$10$S3dhPPIWdpV86v3JoJEymONZ7EU.zNyvpf4ivHN0lnbwrFzBP.g9a', 2, 'NO');
 
 -- --------------------------------------------------------
 
@@ -185,7 +191,12 @@ INSERT INTO `ventas_cabecera` (`id`, `fecha`, `usuario_id`, `total_venta`) VALUE
 (21, '2025-06-26 14:38:58', 5, 600.00),
 (22, '2025-06-26 14:39:44', 5, 600.00),
 (23, '2025-06-26 14:42:33', 5, 600.00),
-(24, '2025-06-30 23:09:30', 7, 6710.30);
+(24, '2025-06-30 23:09:30', 7, 6710.30),
+(25, '2025-07-02 04:45:05', 7, 9000.00),
+(26, '2025-07-06 22:20:17', 10, 27000.00),
+(27, '2025-07-29 19:57:15', 5, 40000.00),
+(28, '2025-07-29 20:00:15', 5, 3800.00),
+(29, '2025-07-29 20:17:37', 6, 5800.00);
 
 -- --------------------------------------------------------
 
@@ -229,7 +240,13 @@ INSERT INTO `ventas_detalle` (`id`, `ventas_id`, `producto_id`, `cantidad`, `pre
 (21, 21, 16, 1, 600.00),
 (22, 22, 16, 1, 600.00),
 (23, 23, 16, 1, 600.00),
-(24, 24, 20, 1, 6710.30);
+(24, 24, 20, 1, 6710.30),
+(25, 25, 16, 1, 9000.00),
+(26, 26, 16, 3, 9000.00),
+(27, 27, 17, 1, 40000.00),
+(28, 28, 18, 1, 3800.00),
+(29, 29, 18, 1, 3800.00),
+(30, 29, 19, 1, 2000.00);
 
 --
 -- Índices para tablas volcadas
@@ -296,7 +313,7 @@ ALTER TABLE `categorias`
 -- AUTO_INCREMENT de la tabla `contacto`
 --
 ALTER TABLE `contacto`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de la tabla `perfiles`
@@ -308,25 +325,25 @@ ALTER TABLE `perfiles`
 -- AUTO_INCREMENT de la tabla `productos`
 --
 ALTER TABLE `productos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de la tabla `ventas_cabecera`
 --
 ALTER TABLE `ventas_cabecera`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT de la tabla `ventas_detalle`
 --
 ALTER TABLE `ventas_detalle`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- Restricciones para tablas volcadas
